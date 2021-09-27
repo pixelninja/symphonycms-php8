@@ -1,0 +1,5 @@
+Adds a hook to the backend so you can easily make JavaScript adjustments on certain pages
+
+To use install the extension.
+
+In the folder backend_add_script/assets you will find a custom.js and custom.css file. You can use these files to add your custom JavaScript and/or CSS to Symphony

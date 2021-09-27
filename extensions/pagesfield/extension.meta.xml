@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="pagesfield" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Pages Field</name>
+	<description>Easily related entries to pages</description>
+	<repo type="github">https://github.com/symphonists/pagesfield</repo>
+	<url type="discuss">http://getsymphony.com/discuss/thread/267/</url>
+	<types>
+		<type>Field Types</type>
+	</types>
+	<authors>
+		<author>
+			<name github="symphonists" symphony="community">Symphony Community</name>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.8.2" date="2016-08-16" min="2.6.0" max="2.x.x">
+			- Supported on PHP 7
+			- Fix update database
+			- Fix param to fit parent signature
+		</release>
+		<release version="1.8.1" date="2016-03-06" min="2.6.0" max="2.x.x">
+			- Updated compatibility infos
+		</release>
+		<release version="1.8.0" date="2015-05-27" min="2.6.0" max="2.6.x">
+			- Fix datasource filtering suggestions
+		</release>
+		<release version="1.7.0" date="2015-02-02" min="2.5.0" max="2.5.x">
+			- Fix sorting with multiple pages causing entries to disappear (#21)
+			- Fix compatibility problems with Symphony 2.5 (#17)
+			- Fix multiple pages not appearing (#16)
+			- Implemented uniqueness (#7)
+		</release>
+		<release version="1.6.2" date="2014-08-08" min="2.3" max="2.4.0">
+			- Fix for page sorting (#15)
+		</release>
+		<release version="1.6.1" date="2013-08-05" min="2.3">
+			- Reverted pages linking from entry index to pages section.
+		</release>
+		<release version="1.6" date="2013-08-24" min="2.3">
+			- Added request for sorting to be the same as the sort order under the Pages admin area.
+			- Added parent page ID to xml output, only if the page has a parent.
+			- Added associations, visible under the Page edit screen.
+			- Page titles under a section index are now linkable.
+		</release>
+		<release version="1.5" date="2012-06-05" min="2.3">
+			- Update for Symphony 2.3
+		</release>
+		<release version="1.4.1" date="2011-12-02" min="2.0.6" max="2.2.x" />
+	</releases>
+</extension>

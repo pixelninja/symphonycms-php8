@@ -1,0 +1,24 @@
+.block-group-wrapper:after {
+	display: block;
+	content: attr(data-label);
+	background-color: #ffffff;
+    padding-right: 10px;
+
+    position: absolute;
+    top: 3px;
+    left: 0;
+
+    font-weight: 700;
+}
+
+.block-group-wrapper:before {
+	display: block;
+	content: '';
+	height: 4px;
+	margin-bottom: 15px;
+	background-color: #333;
+}
+
+.block-group-wrapper:not(:last-of-type) {
+	margin-bottom: 50px;
+}

@@ -1,0 +1,9 @@
+A Symphony CMS extension to save the latest GIT revision number as a global parameter. 
+
+In your project directory, run `git fetch` to create the FETCH_HEAD file and store the git commit reference (Must be done prior to install).
+
+The FETCH_HEAD will be updated whenever a pull is done, so it might not change locally where you are committing and pushing. But it will change on your staging or production environment where you are pulling. In order to update locally, run `git fetch`.
+
+Copy the git_head_parameter folder into your 'extensions' directory and install the extension.
+
+A parameter named $git_head will now be available on your pages.

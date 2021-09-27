@@ -1,0 +1,9 @@
+# Publish Shortcuts
+ 
+Lets you define shortcut buttons for the section/publish index pages.
+
+## Installation
+  
+1. Upload the `publish_shortcuts` folder in this archive to your Symphony `extensions` folder.
+2. Enable it by selecting the "Publish Shortcuts", choosing "Enable" from the "with-selected" menu, then clicking "Apply".
+3. Add your shortcuts on the /system/preferences/ page.

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="maplocationfield" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Map Location Field</name>
+	<description>Plot locations on a Google Map. Supports address geocoding.</description>
+	<repo type="github">https://github.com/symphonists/maplocationfield</repo>
+	<url type="discuss">http://getsymphony.com/discuss/thread/35943/</url>
+	<types>
+		<type>Field Types</type>
+	</types>
+	<authors>
+		<author>
+			<name github="symphonists" symphony="community">Symphony Community</name>
+		</author>
+		<author>
+			<name github="nickdunn" symphony="nickdunn">Nick Dunn</name>
+			<website>http://nick-dunn.co.uk</website>
+		</author>
+		<author>
+			<name github="animaux" symphony="animaux">Alexander Rutz</name>
+			<website>http://animaux.de</website>
+		</author>
+	</authors>
+	<media>
+		<item type="image" url="https://cloud.githubusercontent.com/assets/446874/20055986/31cd4f4a-a4e4-11e6-934c-4a774c85d418.png">Map Location Field: Plot locations on a Google Map. Supports address geocoding.</item>
+	</media>
+	<releases>
+		<release version="3.4.2" date="2017-01-04" min="2.3.x" max="2.x.x">
+			- fix for missing column on fresh install
+		</release>
+		<release version="3.4.1" date="2016-11-07" min="2.3.x" max="2.x.x">
+			- localisation for german/french/norwegian
+		</release>
+		<release version="3.4.0" date="2016-11-07" min="2.3.x" max="2.x.x">
+			- make API key configurable in field settings
+			- https everywhere
+		</release>
+		<release version="3.3.3" date="2016-11-02" min="2.3.x">
+			- switch to https to fix broken default geocoding
+		</release>
+		<release version="3.3.2" date="2016-11-02" min="2.3.x">
+			- Remove Tabs
+			- Remove sensor option
+			- Possibility to add API-Key
+			- OSM and other custom maps included
+		</release>
+		<release version="3.3.1" date="2012-03-27" min="2.3.x" />
+		<release version="3.3.0" date="2012-03-27" min="2.3.x" />
+		<release version="3.2.3" date="2011-10-12" min="2.2" max="2.2.x" />
+		<release version="3.2.2" date="2011-08-16" min="2.2" />
+	</releases>
+</extension>

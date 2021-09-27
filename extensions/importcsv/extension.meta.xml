@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension id="importcsv" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Import/Export CSV</name>
+	<description>Import a CSV file to create new entries for a certain section, or export an existing section to a CSV file.</description>
+	<repo type="github">https://github.com/symphonists/importcsv</repo>
+	<types>
+		<type>Workflow</type>
+		<type>Other</type>
+		<type>Import</type>
+		<type>Export</type>
+	</types>
+	<authors>
+		<author>
+			<name github="symphonists" symphony="community">Symphony Community</name>
+			<website>https://www.getsymphony.com/</website>
+		</author>
+		<author>
+			<name github="TwistedInteractive">Twisted Interactive</name>
+			<website>http://www.twisted.nl</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.0.3" date="2018-09-24" min="2.6.0" max="2.x.x">
+			- Fix page name sanitization issue
+		</release>
+		<release version="1.0.2" date="2018-01-10" min="2.6.0" max="2.x.x">
+			- Allow custom backend URL
+			- PHP7 compatibility
+		</release>
+		<release version="1.0.1" date="2017-11-06" min="2.6.0" max="2.x.x">
+			- Fix importer's Member password value (#2)
+		</release>
+		<release version="1.0" date="2017-10-17" min="2.6.0" max="2.6.x"/>
+		<release version="0.3" date="2011-12-15" min="2.3.0"/>
+		<release version="0.2.3" date="2011-08-31" min="2.2.x"/>
+	</releases>
+</extension>

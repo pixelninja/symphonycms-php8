@@ -1,0 +1,9 @@
+.cc {
+	display: block;
+	color: #222;
+	margin: 10px 0px;
+	padding: 3px 0;
+	border-top: 1px dashed #222;
+	border-bottom: 1px dashed #222;
+	opacity: 0.7;
+}

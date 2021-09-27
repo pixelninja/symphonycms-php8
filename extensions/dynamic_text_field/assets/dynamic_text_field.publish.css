@@ -1,0 +1,20 @@
+div.field-dynamictextfield {
+	min-height: 8.7rem;
+}
+
+div.field-dynamictextfield div.content {
+	padding-bottom: 7px;
+}
+
+div.field-dynamictextfield label {
+	margin: 0 0 2px;
+}
+
+div.field-dynamictextfield h4 {
+	display: block;
+    width: calc(70% - 100px);
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

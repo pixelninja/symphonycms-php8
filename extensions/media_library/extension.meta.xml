@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="media_library" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Media Library</name>
+	<description>Media management extension for Symphony CMS. Edit images and manage upload file.</description>
+	<repo type="github">https://github.com/pixelninja/media_library</repo>
+	<types>
+		<type>Workflow</type>
+	</types>
+	<authors>
+		<author>
+			<name github="pixelninja" symphony="touchstone">Phillip Gray</name>
+			<email>phill@thebold.nz</email>
+			<website>https://thebold.nz</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="3.3" date="2021-01-13" min="2.7.x">
+			- Better 'Upload' UI with split screen drag/drop
+		</release>
+		<release version="3.2.1" date="2021-01-13" min="2.7.x">
+			- Only show select all of there is more than one file
+		</release>
+		<release version="3.2" date="2021-01-13" min="2.7.x">
+			- Better 'Select All' UI, with ability to toggle all at once
+		</release>
+		<release version="3.1" date="2020-12-23" min="2.7.x">
+			- Add ability to create directories
+		</release>
+		<release version="3.0" date="2020-12-22" min="2.7.x">
+			- BREAKING CHANGE: Restructure the output into nodes instead of attributes. This was getting too large and unreadable, and nodes are easier to deal with within xslt
+		</release>
+		<release version="2.2" date="2020-12-21" min="2.7.x">
+			- Re-work the subdirectories into a breadcrumb for easier visualisation and navigation
+		</release>
+		<release version="2.1.13" date="2020-12-18" min="2.7.x">
+			- Add apache check for mod_expires module
+		</release>
+		<release version="2.1.12" date="2020-12-14" min="2.7.x">
+			- Bug fix: JSON files are cached making it look like the Alts and Tags aren't being added. I have added an htaccess file to the JSON directory that overrides the cache and forces it to revalidate
+		</release>
+		<release version="2.1.11" date="2020-10-25" min="2.7.x">
+			- Bug fix: file name was getting lost after the restructure of content.
+		</release>
+		<release version="2.1.10" date="2020-10-19" min="2.7.x">
+			- Bug fix: Position of tag/alt inputs was behind submit button
+		</release>
+		<release version="2.1.9" date="2020-10-19" min="2.7.x">
+			- Bug fix: Filtering has been broken since the structure changes of 2.1.5.
+		</release>
+		<release version="2.1.8" date="2020-10-19" min="2.7.x">
+			- Bug fix: 'View' links on Media Library Fields were going to incorrect file URL after file had been replaced
+		</release>
+		<release version="2.1.7" date="2020-10-19" min="2.7.x">
+			- Bug fix: row options were collapsing to a new line when tags or alt attributes were added. Add better flex rules.
+		</release>
+		<release version="2.1.6" date="2020-10-18" min="2.7.x">
+			- Add resize utility to Doka
+			- Stop rename prompt happening when Doka is escaped
+		</release>
+		<release version="2.1.5" date="2020-10-15" min="2.7.x">
+			- Add ability to edit and replace/rename an existing file (must have Doka files loaded in)
+			- Restructure file rows for better alignment/spacing
+		</release>
+		<release version="2.1.4" date="2020-10-06" min="2.7.x">
+			- Bug fix: incorrect file path for JSON files in XML output
+		</release>
+		<release version="2.1.3" date="2020-10-06" min="2.7.x">
+			- Better folder layout and naming
+		</release>
+		<release version="2.1.2" date="2020-10-05" min="2.7.x">
+			- Add Alt attributes to images
+			- Output Alt attributes and tags into page XML
+		</release>
+		<release version="2.1.1" date="2020-09-30" min="2.7.x">
+			- Bug fix: remove event handlers on back/forwards directory click events on re-init of main function to prevent stacking of click events
+			- Bug fix: better fasly declaration on undefined/null folder path
+		</release>
+		<release version="2.1.0" date="2020-08-24" min="2.7.x">
+			- Bug fix: prevent events being called multiple times
+		</release>
+		<release version="2.0.12" date="2020-08-24" min="2.7.x">
+			- Consistent styling for fields within the Primary column
+			- Add a landscape and portrait ratio with relevant validation
+		</release>
+		<release version="2.0.11" date="2020-08-03" min="2.7.x">
+			- Remove icon from navigation
+			- Add scripts/styles from local source instead of calling them from unpkg.com as it's often slow to load
+		</release>
+		<release version="2.0.10" date="2020-07-02" min="2.7.x">
+			- Allow multiple files to be selected at once when field allows it
+		</release>
+		<release version="2.0.9" date="2020-06-23" min="2.7.x">
+			- Add a check for animated GIFs into FilePond transform process, if it is then don't apply transform which converts it to a PNG.
+		</release>
+		<release version="2.0.8" date="2020-06-23" min="2.7.x">
+			- Media Fields within Modal boxes weren't opening because of the `trigger` call on a non existant nav item. I have fixed this by wrapping the loading of the ML into a function and calling that on click instead.
+		</release>
+		<release version="2.0.7" date="2020-06-05" min="2.7.x">
+			- Add ability to define a destinition folder for file selection
+		</release>
+		<release version="2.0.6" date="2020-05-11" min="2.7.x">
+			- Create field specific validation for image ratio and file size
+			- Bug fix: validation didn't loop through data array and only validated first item. It now validates all files attached.
+			- Add better Doka crop ratios
+			- Redo the read me
+		</release>
+		<release version="2.0.5" date="2020-05-06" min="2.7.x">
+			- Bug fix: delete button event wasn't triggering on AJAX loaded content
+			- Bug fix: rogue colon in delete file function causing an error
+		</release>
+		<release version="2.0.4" date="2020-05-06" min="2.7.x">
+			- Better define jQuery
+		</release>
+		<release version="2.0.3" date="2020-05-06" min="2.7.x">
+			- Add missing `Symphony::Configuration()->remove()` from Uninstall function
+			- Add File Size validation
+			- Add Image Size validation
+		</release>
+		<release version="2.0.2" date="2020-05-05" min="2.7.x">
+			- Add a file_exists check for the Doka files to prevent unecessary requests which fail
+		</release>
+		<release version="2.0.1" date="2020-05-05" min="2.7.x">
+			- Type fix where min image height was being applied to max image height
+		</release>
+		<release version="2.0.0" date="2020-05-05" min="2.7.x">
+			- Replace upload method with FilePond
+			- Include Doka integration, if user has a licence
+			- Add preferences pane for image editing options
+			- Some styling changes for better flow
+			- Automatically refresh list of files on completion of upload
+		</release>
+		<release version="1.3.3" date="2020-04-15" min="2.7.x">
+			- Sanitize the file name when uploading to prevent special characters causing display issues with images
+		</release>
+		<release version="1.3.2" date="2020-03-30" min="2.7.x">
+			- Sanitize the file name to prevent errors in XML output, specifically the name attribute
+		</release>
+		<release version="1.3.1" date="2020-03-11" min="2.7.x">
+			- Update how multiple items are displayed
+			- Add drag/drop for reording multiple items
+		</release>
+		<release version="1.3" date="2020-03-10" min="2.7.x">
+			- Add ability for multiple files to be attached
+			- Add default preview so something is always displayed
+		</release>
+		<release version="1.2.2" date="2020-03-06" min="2.7.x">
+			- Bug fix where ML wouldn't trigger within AJAX loaded content (e.g within Entry Relationship Field content)
+		</release>
+		<release version="1.2.1" date="2020-03-06" min="2.7.x">
+			- Add validation to Media Library field
+			- Add a remove link to unattach files
+			- Show video and audio previews
+			- Have bigger previews in the Primary column
+		</release>
+		<release version="1.2.0" date="2020-03-05" min="2.7.x">
+			- Add a Media Library Field to the section editor
+			- The new field triggers the ML which allows for uploading/selecting a file to attach to an entry
+			- Show a preview of the file if it's an image
+			- Output the field in a datasource with relevant meta data
+		</release>
+		<release version="1.1.3" date="2019-08-09" min="2.7.x">
+			- Add a tag count to the Tags link, and add hover state showing tag content
+			- Ignore changes to the json file
+		</release>
+		<release version="1.1.2" date="2019-08-07" min="2.7.x">
+			- Tagging bug fixes
+		</release>
+		<release version="1.1.1" date="2019-08-07" min="2.7.x">
+			- Tagging bug fixes
+		</release>
+		<release version="1.1" date="2019-08-06" min="2.7.x">
+			- Added ability to tag images, which are searchable
+		</release>
+		<release version="1.0.1" date="2019-03-19" min="2.7.x">
+			- Update so deleting works within lightbox
+			- Bug fixes
+		</release>
+		<release version="1.0.0" date="2019-03-18" min="2.7.x">
+			- Remove unused plugins and add clipboard into extension js file for fewer requests
+			- Add AJAX call for page fetching
+			- Combine this plugin with TinyMCE plugin to work within editors
+		</release>
+		<release version="0.4" date="2019-03-15" min="2.7.x">
+			- Removed Featherlite, and open previews in a new tab instead
+		</release>
+		<release version="0.3" date="2019-03-15" min="2.7.x">
+			- Order files by date instead of name
+			- Hide directories by default. A button has been added for toggling their visibility
+			- Added an input for filtering files based on a keyword match
+		</release>
+		<release version="0.2" date="2017-08-17" min="2.7.x">
+			- Restructured the way files are displayed
+			- Added loads of features
+		</release>
+		<release version="0.1" date="2017-07-22" min="2.7.x" />
+	</releases>
+</extension>

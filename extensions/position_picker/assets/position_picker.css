@@ -1,0 +1,19 @@
+div.position_picker { 
+	margin: 15px 0;
+}
+
+div.position_picker .pic {
+	width: 100%;
+	height: auto;
+}
+
+div.position_picker .crosshair { 
+	position: absolute;
+	z-index: 2;
+	/*background: url('crosshair.gif') no-repeat -16px 0;*/
+	height: 32px;
+	width: 32px;
+	overflow:visible;
+}
+div.position_picker img.pic { cursor: crosshair; z-index: 1;}
+div.position_picker_vars { display: none; }

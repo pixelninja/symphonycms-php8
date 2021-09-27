@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="association_field" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Association Field</name>
+	<description>Linking entries between two sections</description>
+	<repo type="github">https://github.com/symphonists/association_field</repo>
+	<types>
+		<type>Field Types</type>
+	</types>
+	<authors>
+		<author>
+			<name github="symphonycms" symphony="team">Symphony Team</name>
+			<website>http://getsymphony.com</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="2.1.0" date="2018-07-24" min="2.6" max="2.x.x">
+			- Add canPrePopulate() (#28)
+			- Add related filter (#23)
+		</release>
+		<release version="2.0.2" date="2017-08-10" min="2.6" max="2.x.x">
+			- Symphony 2.7 compatibility
+		</release>
+		<release version="2.0.1" date="2017-06-06" min="2.6" max="2.6.x">
+			- Fix missing internal name change (see introduction of `prepareReadableValue` in `2.0.0`)
+		</release>
+		<release version="2.0.0" date="2017-06-05" min="2.6" max="2.6.x">
+			- Rename outdated `preparePlainTextValue` to `prepareReadableValue`
+		</release>
+		<release version="1.1.0" date="2016-10-06" min="2.5" max="2.6.x">
+			- Added new `AssociationFiltering` delegate allowing extension to filter results
+			- Fix MySQL 5.7 Distinct, order by error when in strict mode
+		</release>
+		<release version="1.0.1" date="2015-07-21" min="2.5">
+			- Removed association count from index for single select fields
+		</release>
+		<release version="1.0.0" date="2015-07-21" min="2.5">
+			- Enabled publish filtering
+			- Fixed importing
+			- Fixed markup handling in captions
+			- Backported Select Box Link changes
+			- Added markup to index tables for interface styling
+		</release>
+		<release version="0.5.4" date="2014-07-24" min="2.4">
+			- Merged in changes from Select Box Link
+			- Code clean-up
+		</release>
+		<release version="0.5.3" date="2014-07-03" min="2.4">
+			- Fixed option encoding for field instances with interface
+		</release>
+		<release version="0.5.2" date="2014-06-24" min="2.4">
+			- Updated field settings layout
+		</release>
+		<release version="0.5.1" date="2014-06-16" min="2.4">
+			- Fixed option discovery
+		</release>
+		<release version="0.5.0" date="2014-06-16" min="2.4">
+			- Added persistent sort orders to XML output
+		</release>
+		<release version="0.4.0" date="2014-06-13" min="2.4">
+			- Added persistent sort orders to UI
+		</release>
+		<release version="0.3.0" date="2014-06-12" min="2.4">
+			- Added data type to markup
+		</release>
+		<release version="0.2.0" date="2014-06-12" min="2.4">
+			- Added entry limit to markup
+		</release>
+		<release version="0.1.0" date="2014-06-05" min="2.4">
+			- Added association interfaces
+			- Initial release (forked Select Box Link)
+		</release>
+	</releases>
+</extension>

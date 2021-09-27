@@ -1,0 +1,77 @@
+select.small { width: 300px; }
+
+fieldset h2 { width: 95%; }
+fieldset.left { width: 50%; float: left; padding: 0; }
+fieldset.right { width: 50%; float: right; padding: 0; }
+
+table.import { border-collapse: collapse; cursor: pointer; margin-bottom: 1em; }
+table.import th, table.import td { text-align: left; border-bottom: 1px solid #ccc; padding: 3px 40px 3px 0; }
+table.import td, table.import th { padding: 3px; }
+table.import th.unique { width: 80px; }
+
+option.dont-use { color: #800; }
+
+var { display: none; }
+
+div.progress {
+    border:  1px solid #ccc;
+    height: 20px;
+    margin: 10px 18px;
+}
+
+div.bar {
+    width: 0%;
+    height: 16px;
+    background:  #383838;
+    color: #ccc;
+    word-wrap: normal;
+    white-space: nowrap;
+    padding: 2px 0;
+    text-indent: 5px;
+}
+
+div.console {
+    height: 300px;
+    border: 1px solid #ccc;
+    overflow: auto;
+    font-family: consolas, monospace;
+    font-size: 12px;
+    margin: 18px;
+}
+
+div.console span {
+    display: block;
+    border-bottom:  1px solid #eee;
+    padding: 2px;
+}
+
+div.console span.error {
+    color: #800;
+    background:  #fcc;
+}
+
+.importer {
+    clear: both;
+    margin-top: 10px;
+    padding: 27px 18px 18px;
+}
+
+.importer.multilanguage {
+    display: none;
+}
+
+.importer h3, .importer h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0 !important;
+}
+
+.importer input[type=submit] {
+    float: none;
+    margin: 0;
+}
+
+ul.importer-nav { margin: 0; height: 28px; border-bottom: 1px solid #dbdcd7; }
+ul.importer-nav li { float: left; margin-left: 18px; }
+ul.importer-nav a { display: block; padding: 5px 10px 5px 0; }
+ul.importer-nav a.active { color: #000; }

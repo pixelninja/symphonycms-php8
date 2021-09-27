@@ -1,0 +1,42 @@
+.tab-group {
+	position: absolute;
+	top: -99999em;
+	left: -99999em;
+	width: 100%;
+}
+
+.tab-group-selected {
+	position: static;
+}
+
+ul.tabs li.invalid .icon {
+	background: #f4f4f4;
+	color: rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	margin: 0 0 0 5px;
+	border-radius: 8px;
+	font-weight: lighter;
+}
+
+ul.tabs li.invalid.selected .icon {
+	background: #dd4422;
+	color: #f4f4f4;
+}
+
+ul.tabs li.invalid:hover,
+ul.tabs li.invalid .icon {
+	text-shadow: none;
+	color: #dd4422;
+}
+
+ul.tabs li.invalid:hover .icon {
+	background: #dd4422;
+	color: rgba(255, 255, 255, 0.7);
+}

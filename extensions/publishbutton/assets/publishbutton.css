@@ -1,0 +1,41 @@
+.page-new .field-publishbutton,
+.page-edit .field-publishbutton {
+    display: none;
+}
+
+.publishbutton-trigger.disabled {
+    filter: grayscale(100%);
+}
+
+.publishbutton-loader,
+.publishbutton-loader:after {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.publishbutton-loader {
+    margin: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-top-color: rgba(40, 40, 40, 0.2);
+    border-right-color: rgba(40, 40, 40, 0.2);
+    border-bottom-color: rgba(40, 40, 40, 0.2);
+    border-left-color: rgba(40, 40, 40, 1);
+
+    position: absolute;
+    top: 50%;
+    left: -20px;
+
+    transform: translateY(-50%) rotateX(0deg);
+
+    animation: spin 1.1s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}

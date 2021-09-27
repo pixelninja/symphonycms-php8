@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="are_you_sure" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Are you sure?</name>
+	<description>Are-You-Sure (Dirty Form Detection)</description>
+	<repo type="github">https://github.com/animaux/are_you_sure</repo>
+	<types>
+		<type>Interface</type>
+	</types>
+	<authors>
+		<author>
+			<name github="animaux" symphony="animaux">Alexander Rutz</name>
+			<website>http://animaux.de</website>
+		</author>
+	</authors>
+	<releases>
+	  <release version="0.6" date="2018-10-22" min="2.6" max="2.x.x">
+			- Save button pulse animation on dirty forms
+		</release>
+		<release version="0.5" date="2016-03-03" min="2.6" max="2.x.x">
+			- language support for french (thanks Nicolas!)
+		</release>
+	  <release version="0.4" date="2016-03-02" min="2.6" max="2.x.x">
+			- language support for estonian (thanks Kristjan!)
+		</release>
+	  <release version="0.3" date="2016-03-02" min="2.6" max="2.x.x">
+			- Simply entering an »Editor for Symphony«-field does not trigger a dirty form
+			- language support for german, norwegian, maltese (thanks Jon!)
+		</release>
+	  <release version="0.2" date="2016-02-29" min="2.6" max="2.x.x">
+			- Hackish Support for »Editor for Symphony«
+		</release>
+	  <release version="0.1" date="2015-05-13" min="2.6" max="2.x.x">
+			- Initial Release
+		</release>
+	</releases>
+</extension>

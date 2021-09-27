@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="unpublishedfilter" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Unpublished Filter</name>
+	<description>Greyes out unpuplished entries in the publish overview.</description>
+	<repo type="github">https://github.com/symphonists/unpublishedfilter</repo>
+	<url type="discuss">https://getsymphony.com/discuss/thread/46509</url>
+	<types>
+		<type>Interface</type>
+	</types>
+	<authors>
+		<author>
+			<name github="symphonists" symphony="community">Symphony Community</name>
+			<website>http://getsymphony.com</website>
+		</author>
+		<author>
+			<name github="hananils" symphony="hananils">Büro für Web- und Textgestaltung</name>
+			<website>http://hananils.de</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="2.3.4" date="2018-03-05" min="2.6.2" max="2.x.x">
+			- PHP 7.x Compatibility
+		</release>
+		<release version="2.3.3" date="2015-09-26" min="2.6.2">
+			- Added Slovak language support
+			- Added missing semicolons
+		</release>
+		<release version="2.3.2" date="2015-09-25" min="2.6.2">
+			- Improved readme and documentation
+		</release>
+		<release version="2.3.1" date="2015-09-11" min="2.6.2">
+			- Made value filtering less strict
+		</release>
+		<release version="2.3.0" date="2015-07-16" min="2.6.2">
+			- Introduced date range filters
+			- Removed custom Moment build
+			- Made date filtering optional (configuration setting)
+		</release>
+		<release version="2.2.0" date="2015-01-09" min="2.3.0" max="2.6.1">
+			- Simplified localisation, make it work in multilingual backends.
+		</release>
+		<release version="2.1.2" date="2013-12-05" min="2.3.0">
+			- Fixed Firefox compatibility.
+		</release>
+		<release version="2.1.1" date="2013-12-04" min="2.3.0">
+			- Added more status keyword.
+			- Match status based on substrings
+		</release>
+		<release version="2.1" date="2013-11-29" min="2.3.0">
+			- Added support for entries with future publish dates.
+		</release>
+		<release version="2.0" date="2013-11-29" min="2.3.0">
+			- Complete rewrite.
+			- Added support for status fields containing values like `published`, `draft` etc.
+		</release>
+		<release version="1.4" date="2012-09-28" min="2.3.0">
+			- Updated extension compatibility with Symphony 2.3.
+		</release>
+		<release version="1.3" date="2011-06-07" min="2.0.7" />
+	</releases>
+</extension>

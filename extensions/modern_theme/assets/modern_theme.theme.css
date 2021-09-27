@@ -1,0 +1,1020 @@
+/* Theme overrides */
+/* backend CSS-overrides */
+/* Add to the bottom of the backend_add_script custom.css file */
+
+/* colors */
+:root {
+--colourA: 240,200,120; /* rather bright */
+--colourB: 0,30,60;     /* rather dark */
+--colourError: 255,65,54; /* Better red for errors */
+}
+
+/* Lucida Grande dash-fix */
+@font-face {
+font-family: 'Ndash';
+src: local('Arial');
+unicode-range: U+2013-2014, U+002D;
+}
+
+body, html, input, option, textarea, button, input, optgroup, select {
+font-family: 'Ndash', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 'Lucida Grande', Leelawadee, Tahoma, Verdana, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* reset Symphony font-sizes */
+body,
+html,
+body > div,
+body > form { 
+font-size: 12px;
+line-height: 1.35em;
+}
+
+/* basics */
+body {
+display: flex;
+flex-flow: row wrap;
+background: rgb(240,240,240);
+}
+
+#wrapper {
+flex: 0 1 100%;
+background: transparent;
+}
+
+#context {
+display: flex;
+flex-flow: row wrap;
+background: transparent;
+padding: 1.8em;
+min-height: auto;
+}
+
+#blueprints-events.edit #context,
+#blueprints-datasources.edit #context,
+#blueprints-events.new #context,
+#blueprints-datasources.new #context {
+	flex-direction: row-reverse;
+}
+
+#blueprints-events .frame .content,
+#blueprints-datasources .frame .content {
+	background-color: #e8e8e8
+}
+
+#context .actions {
+display: flex;
+flex-flow: row nowrap;
+position: static;
+margin: 0 0 0 auto;
+background: none;
+}
+
+#context > p,
+#context > .drawer {
+	width: 100%;
+}
+
+.index .actions,
+.page-index .actions {
+height: auto;
+}
+
+#contents {
+background: transparent;
+border-top: none;
+box-shadow: none;
+min-height: auto;
+}
+
+a,
+span.dok,
+button,
+input {
+transition: color 250ms ease-in, background 250ms ease-in, box-shadow 500ms ease-out, border 500ms ease-out;
+}
+
+a {
+color: black;
+border-bottom: 1px solid rgb(var(--colourA));
+}
+
+a:hover {
+color: rgb(var(--colourA));
+border-bottom-color: transparent;
+}
+
+/* filtering */
+.drawer-filtering .frame {
+	background: none;
+}
+
+.drawer-filtering .apply-filters {
+	margin-top: 1.1rem;
+}
+
+/* index links to entry */
+/*tr:not(.unpublishedfilter-draft) td:first-child a.content {*/
+td:first-child a.content {
+border: none;
+color: white;
+font-weight: bold;
+background: rgb(var(--colourB));
+}
+
+/*tr:not(.unpublishedfilter-draft) td:first-child a.content:hover {*/
+td:first-child a.content:hover {
+color: rgb(var(--colourB));
+background: rgb(var(--colourA));
+box-shadow: .3em .3em 0 rgba(var(--colourB),.1);
+}
+
+td:first-child a.content {
+display: inline-block;
+padding: .2em .4em .15em .4em;
+}
+
+/* inactive links */
+a.inactive,
+td:first-child > a.content.inactive {
+pointer-events: none;
+cursor: default;
+background: rgba(230,200,30,0.3);
+color: #444;
+}
+
+tr.inactive td:first-child a.content {
+	background: none;
+	transition: none;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+tr.inactive td:first-child a.content:hover {
+	box-shadow: none;
+}
+
+/* rows */
+td {
+background-color: rgba(255,255,255,.5);
+}
+
+tr:nth-child(even) td {
+background-color: rgba(255,255,255,1);
+}
+
+#header {
+display: flex;
+flex-flow: row wrap;
+padding: 0;
+background: rgb(var(--colourB));
+border-bottom: none;
+}
+
+.notifier {
+flex: 1 0 100%;
+border-bottom: none;
+}
+
+.notice.success {
+color: rgba(0,0,0,.8);
+background: rgb(190,220,40);
+}
+
+.notice.success.dimmed {
+color: rgba(255,255,255,.6);
+background: rgb(140,180,20);
+}
+
+.notice.success a {
+color: rgba(0,0,0,.8);
+}
+
+.notice.success.dimmed a {
+color: rgba(255,255,255,.6);
+}
+
+#header h1 {
+flex: 1 0 auto;
+font-size: 1.25em;
+background: transparent;
+padding: 1.4em 1.4em .7em 1.4em;
+}
+
+#header h1 a {
+font-weight: bold;
+font-style: normal;
+}
+
+#header h1 a,
+#session a {
+color: rgb(var(--colourA));
+text-shadow: none;
+}
+
+#header h1 a:hover,
+#session a:hover {
+color: rgba(255,255,255,0.8);
+}
+
+#session {
+position: static;
+float: none;
+margin: 0;
+padding: 1.4em 1.4em .7em 1.4em;
+}
+
+#nav {
+background: transparent;
+border-bottom: none;
+display: flex;
+flex-flow: row wrap;
+float: none;
+min-height: auto;
+font-size: inherit;
+}
+
+#nav>ul>li {
+color: rgba(255,255,255,.9);
+text-shadow: none;
+border-bottom: .3em solid transparent;
+}
+
+#nav ul a:hover {
+color: white;
+background: rgba(var(--colourB));
+text-shadow: none;
+}
+
+#nav li ul {
+left: 0;
+border: none;
+}
+
+#nav.wide ul.structure li ul {
+left: auto;
+right: 0;
+}
+
+#nav ul.structure {
+margin-left: auto;
+}
+
+#nav>ul>li.active {
+color: white;
+font-weight: bold;
+background: rgba(var(--colourB));
+text-shadow: none;
+border-bottom-color: white;
+}
+
+#nav>ul>li:hover:after {
+content: none;
+}
+
+#context .actions li,
+#login button,
+#nav.wide ul.structure,
+.frame .actions button,
+ul.actions .entry-nav {
+float: none !important;
+}
+
+/* list selection */
+td {
+border: none !important;
+vertical-align: middle;
+}
+
+tr.selected td {
+border: none;
+background-color: rgba(var(--colourB),.2);
+color: black;
+}
+
+tr:nth-child(odd).selected td {
+background-color: rgba(var(--colourB),.1);
+}
+
+
+/* inputs */
+input[type='text'],
+input[type='password'] {
+/*input:not([type='checkbox']):not([type='radio']) {*/
+	min-height: 32px;
+	padding: 5px;
+}
+
+input[type='text'][disabled] {
+	background-color: rgba(255,255,255,0.6);
+}
+
+/* selectboxes */
+
+select[multiple] {
+	padding: 3px 5px;
+
+	position: relative;
+	z-index: 1;
+}
+
+select[multiple] option {
+	margin-bottom: 2px;
+}
+
+/*select:not([multiple]) {
+	min-height: 30px;
+	padding: 5px 2px;
+}*/
+
+.filters-duplicator li select,
+.field.field-memberrole select,
+.field.field-select select:not([multiple]) {
+	-webkit-appearance: none;
+	appearance: none;
+	min-height: 32px;
+	padding: 5px;
+	border-radius: 0;
+	border: none;
+	border-bottom: .1rem solid rgba(0,0,0,.25);
+}
+
+.field.field-memberrole label,
+.field.field-select label {
+	position: relative;
+}
+
+.filters-duplicator label.secondary:after,
+.field.field-memberrole label:after,
+.field.field-select label:after {
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 6px solid rgba(0,0,0,0.25);
+
+	position: absolute;
+	bottom: 13px;
+	right: 10px;
+}
+
+/* checkboxes */
+div.field-uniquecheckbox,
+div.field-checkbox {
+padding: 8px 10px;
+background: white;
+/*margin-top: 2rem*/
+margin-bottom: 2rem
+}
+
+div.field-uniquecheckbox:first-child,
+div.field-checkbox:first-child {
+margin-top: 1.8rem
+}
+
+div.field.field-uniquecheckbox label,
+div.field.field-checkbox label {
+margin-bottom: 0;
+}
+
+div.field.field-uniquecheckbox input,
+div.field.field-checkbox input {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+div.field.field-uniquecheckbox .cc,
+div.field.field-checkbox .cc {
+	margin-top: 0;
+}
+
+/* pagination */
+
+ul.page {
+	height: auto;
+	margin-top: 0;
+}
+
+.index .actions + ul.page,
+.page-index .actions + ul.page {
+	margin: 0;
+}
+
+/* actions */
+.index div.actions,
+.page-index div.actions,
+.single #contents div.actions {
+display: flex;
+flex-flow: row wrap;
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+height: auto;
+margin: 0;
+background-color: rgba(230,230,230,.95);
+border-top: none;
+padding: 1rem 1.8rem;
+z-index: 1000;
+box-shadow: none;
+}
+
+.index div.actions,
+.page-index div.actions {
+justify-content: flex-end;
+}
+
+.single #contents div.actions input,
+.single #contents div.actions button {
+float: none;
+}
+
+.single #contents div.actions input[type=submit] {
+margin-left: auto;
+order: 100;
+}
+
+.dirty div.actions {
+background: rgba(240,160,80,.95) !important;
+}
+
+
+/* buttons */
+input {
+height: auto;
+border-radius: .2em;
+}
+
+.apply-button-left,
+.apply-button-right,
+.apply-label-left,
+.apply-label-right,
+.button,
+button,
+input[type=submit] {
+display: inline-block;
+color: black;
+background: rgba(0,0,0,.1);
+background-image: none;
+border: none;
+cursor: pointer;
+min-height: auto;
+font-weight: bold;
+line-height: 1em;
+padding: .5em 1em;
+box-sizing: content-box;
+border-radius: .2em;
+height: auto;
+}
+
+.button:active, .button:focus, .button:hover, button:active, button:focus, button:hover, input[type=submit]:active, input[type=submit]:focus, input[type=submit]:hover {
+color: black;
+background: rgb(var(--colourA));
+border: none;
+background-image: none;
+cursor: pointer;
+}
+
+.button.selected,
+button.selected,
+input[type=submit].selected {
+color: white;
+background: rgb(var(--colourB));
+text-shadow: none;
+}
+
+.button.delete:active,
+.button.delete:focus,
+.button.delete:hover,
+button.delete:active,
+button.delete:focus,
+button.delete:hover {
+background-image: none !important;
+background-color: rgb(180,0,0);
+border: none;
+}
+
+.button.create, 
+button.create {
+background-image: none;
+background-color: rgb(0,180,0);
+border: none;
+}
+
+.button.create:active,
+.button.create:focus,
+.button.create:hover,
+button.create:active,
+button.create:focus,
+button.create:hover {
+color: white;
+background-image: none;
+background-color: rgb(0,160,0);
+border: none;
+}
+
+.dirty div.actions input,
+.dirty div.actions button {
+background: rgba(255,255,255,.8);
+}
+
+
+.apply select {
+margin: .275rem 0 0 0;
+}
+
+.apply button, .apply-button-left, .apply-button-right {
+height: auto;
+line-height: 1em;
+}
+
+.apply div {
+background-position: right -1rem;
+}
+
+.apply:hover div {
+background-position: right -1rem;
+}
+
+fieldset.apply.single button {
+	border: none;
+	border-radius: 0.2em
+}
+
+fieldset.apply.single button:hover {
+	color: inherit;
+}
+
+/* forms */
+
+/* FF-Fix */
+input::-moz-focus-inner { 
+border: 0;
+padding: 0;
+}
+
+form.columns {
+padding-top: 0;
+}
+
+form.columns .column.primary,
+form.columns .column.secondary,
+fieldset.settings:first-of-type {
+margin-top: 0;
+border-top: .1em solid rgba(0,0,0,.25);
+padding-top: 2em;
+}
+
+.frame {
+	background: white;
+	border-radius: .2em;
+}
+
+.password .frame button {
+	height: 15px;
+}
+
+.main::before, 
+.sidebar::before {
+margin: .125rem .7rem 0 0;
+}
+
+fieldset.settings > legend {
+	z-index: -1;
+}
+
+fieldset.settings fieldset legend {
+	background: none;
+}
+
+
+/* documenter */
+#drawer-documenter em {
+font-family: 'Cambria', 'MS Gothic', 'Arial Unicode MS', 'Helvetica';
+font-style: normal;
+font-weight: bold;
+background: Magenta;
+color: White;
+font-size: 12px;
+padding: 0 3px 1px 3px;
+-webkit-box-decoration-break: clone;
+-moz-box-decoration-break: clone;
+box-decoration-break: clone;
+}
+
+#documenter-drawer .documenter-content h1.open, #documenter-drawer .documenter-content h2.open, #documenter-drawer .documenter-content h3.open {
+background: rgba(255, 255, 255, 0.4);
+}
+
+#documenter-drawer h2 {
+font-size: 12px;
+}
+
+#documenter-drawer .documenter-content h3 {
+font-weight: bold;
+}
+
+#documenter-drawer .documenter-content h4 {
+color: white;
+border-bottom: 1px solid darkgrey;
+padding: 0.5em 0 0.25em 0;
+margin: 0 0 0.5em 0;
+}
+
+kbd {
+color: black;
+font-family: inherit;
+font-size: 10px;
+border: 1px solid #aaa;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+-moz-box-shadow: 1px 2px 2px #999;
+-webkit-box-shadow: 1px 2px 2px #999;
+box-shadow: 1px 2px 2px #999;
+background-color: #f9f9f9;
+background-image: linear-gradient(top, #eee, #f9f9f9, #eee);
+padding: 0 3px 1px 3px;
+}
+
+/* AU-Editor Materie Overrides */
+[data-interface^="aui-selector"] .selectize-control,
+.aui-editor-create {
+background: rgba(230,230,230,.95);
+}
+
+[data-interface^="aui-selector"] .selectize-input input {
+border-top: none;
+background-position: right 6px top 11px;
+}
+
+/* Publish Tabs Overrides */
+#context ul.tabs {
+flex: 1 0 100%;
+margin: 1em 0 0 0;
+height: auto;
+}
+
+ul.tabs .selected:before {
+display: none;
+}
+
+ul.tabs li,
+ul.tabs li:hover,
+ul.tabs .invalid.selected,
+ul.tabs .invalid.selected:hover,
+ul.tabs .selected {
+	position: relative;
+	border: none;
+	background: none;
+	border-bottom: 1px solid rgb(var(--colourB));
+	height: auto;
+	padding: 0.7em 2em;
+	border-radius: 0;
+	margin-right: 1.5em;
+}
+
+ul.tabs .selected:after {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 5px;
+	background: rgb(var(--colourB));
+	border: none;
+	border-radius: 0;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+
+	transform: translateY(-50%);
+}
+
+ul.tabs .selected,
+ul.tabs .selected:hover {
+font-weight: bold;
+}
+
+
+/* double-/triple-fields */
+/* 
+div#field-9999 {
+display: inline-block;
+width: calc((100% / 3) - 8px);
+}
+
+div#field-9999 {
+display: inline-block;
+width: calc(50% - 8px);
+}
+
+div#field-11 {
+margin-right: .5em;
+}
+*/
+
+
+/* join fields */
+/* 
+div#field-9999 {
+margin-bottom: 0;
+}
+
+div#field-9999 {
+margin-top: 0;
+}
+
+div#field-9999 {
+padding: .5em .75em;
+background: whiteSmoke;
+}
+*/
+
+/* hide association drawer and button */
+#drawer-section-associations,
+a[href="#drawer-section-associations"] {
+/*display: none;*/
+}
+
+/* hide elements */
+/* 
+.id-9999 button.button.confirm.delete {
+display: none;
+}
+*/
+ 
+/* deactivate elements */
+/* 
+div#field-9999 input {
+pointer-events: none;
+opacity: .5;
+}
+*/
+
+/* Login Page */
+#login h1 {
+	padding: 0.7em 1.4em;
+	background: rgb(var(--colourB));
+	border-radius: 0.2em 0.2em 0 0;
+
+	font-size: 1.25em;
+	font-weight: bold;
+	font-style: normal;
+	color: rgb(var(--colourA));
+	text-shadow: none;
+}
+
+/* Errors */
+.invalid {
+	background: rgb(var(--colourError));
+	border: none;
+	border-radius: 0.2em;
+}
+
+.columns > .invalid > p,
+.invalid p {
+	border: none;
+	border-radius: 0 0 0.2em 0.2em;
+	box-shadow: none;
+
+	color: rgba(255,255,255,.9);
+}
+
+
+/*
+	Extension overrides
+*/
+
+/* Tag List */
+.field-taglist ul.tags {
+	margin-top: 0.25rem;
+	margin-bottom: 1rem;
+}
+
+/* Field Divider */
+div.field-field_divider p {
+	background: rgb(240,240,240);
+}
+
+/* Link Preview */
+.actions .button.link-preview {
+	border: none;
+	background: rgb(111, 146, 194);
+}
+.actions .button.link-preview:hover {
+	background: rgb(77, 120, 180);
+}
+
+/* Unpublished Filter */
+tr.unpublishedfilter-draft td:first-child a.content {
+	background: none;
+	transition: none;
+}
+
+tr.unpublishedfilter-draft td:first-child a.content:hover {
+	box-shadow: none;
+}
+
+/* Entry Relationship Field */
+body.entry_relationship form .actions {
+	display: none;
+}
+
+div.field-entry_relationship input.search {
+	min-height: 0;
+	padding: .2rem .3rem;
+}
+
+div.field-entry_relationship label {
+	margin-bottom: 0.2em;
+}
+
+div.field-entry_relationship .entry_relationship-field-choices {
+	margin-top: 0;
+}
+
+/* Duplicate Entry */
+form .actions #duplicate-entry {
+	position: absolute;
+	top: 1rem;
+	right: 140px;
+}
+
+/* Expression Field */
+.field-expression > div {
+	background-color: #fff;
+}
+
+/* Publish Block */
+fieldset.block-group-wrapper:not(.-no-border):after {
+	display: none;
+}
+
+fieldset.block-group-wrapper:not(.-no-border):before {
+	height: 1px;
+	background: rgba(0,0,0,.25);
+}
+
+form.columns .column.primary,
+form.columns .column.secondary,
+fieldset.settings:first-of-type {
+	border-top: none;
+}
+
+/* Publish Tabs */
+body.publish-tabs #context {
+	padding-bottom: 0.1em;
+}
+
+/* Media Library */
+/* Field */
+div.field-medialibraryfield .preview {
+	background-color: rgb(255,255,255);
+}
+.field-medialibraryfield .caption {
+	margin-bottom: 1px;
+	padding: 5px;
+	background: rgb(255,255,255);
+	border-radius: 0.2em;
+
+	line-height: 1.7em;
+}
+
+.field-medialibraryfield .invalid .caption {
+	color: #000;
+}
+
+.field-medialibraryfield .invalid .caption a {
+	color: inherit;
+}
+
+/* Lightbox */
+div.ml-lightbox.is-visible .ml-lightbox-content.show-loader,
+div.ml-lightbox.is-visible .ml-lightbox-content {
+	background-color: rgb(240,240,240);
+}
+
+div.ml-lightbox.is-visible #context {
+	padding-bottom: 1.8em;
+	background-color: rgb(var(--colourB));
+	color: rgb(255,255,255);
+}
+
+div.ml-lightbox.is-visible .ml-trigger-upload {
+	background-color: rgb(var(--colourA));
+	color: rgb(0,0,0);
+}
+
+div.ml-lightbox.is-visible .ml-trigger-directory {
+	background-color: #f0f0f0;
+	color: rgb(0,0,0);
+}
+
+div.media_library-upload.is-active {
+	background-color: rgb(255,255,255);
+}
+
+div.ml-file {
+	border: none;
+	background-color: rgba(255,255,255, 0.5);
+}
+
+div.ml-file:nth-child(even) {
+	background-color: rgb(255,255,255);
+}
+
+div.ml-file:hover {
+	background-color: rgba(var(--colourB),.1);
+}
+
+div.ml-file a {
+	border-color: rgb(var(--colourB));
+}
+
+div.ml-file a:hover {
+	color: rgb(var(--colourB));
+}
+
+.ml-file a.alts input,
+.ml-file a.tags input {
+	height: 32px;
+}
+
+.ml-file a.alts button,
+.ml-file a.tags button {
+	height: 32px;
+	padding: 5px 10px;
+	background: rgb(var(--colourA));
+}
+
+/* Anti brute force */
+#extension-anti_brute_force-colored_-lists fieldset.insert label .input-ip {
+	min-height: 0;
+	padding: .2rem .3rem;
+}
+
+#extension-anti_brute_force-colored_-lists fieldset.insert .actions {
+	padding-top: 1em;
+}
+
+#extension-anti_brute_force-colored_-lists #context .actions {
+	background: none;
+}
+
+#extension-anti_brute_force-colored_-lists #context fieldset {
+	padding: 0;
+}
+
+/* Search Index */
+#drawer-search-index {
+	width: 100%;
+}
+
+.columns > .invalid .column {
+	border: none;
+	border-radius: 0.2em 0.2em 0 0;
+}
+
+
+/* Author Roles */
+.author_roles tr.even {
+	background: #fff;
+}
+
+table.author_roles th,
+table.author_roles td {
+	padding: 10px;
+}
+
+table.author_roles div.sub {
+	padding: 15px;
+}
+
+/* Documenter */
+#drawer-documenter {
+	background: rgb(var(--colourB));
+
+	font-size: 1.1em;
+	line-height: 1.6;
+	color: #fff;
+}
+
+#documenter-drawer > h2 {
+	font-size: 1em;
+}
+
+#documenter-drawer .documenter-content {
+	color: inherit;
+}
+
+#documenter-drawer code {
+	padding: 0.1em 0.4em;
+	background: rgba(255,255,255, 0.8);
+	border: none;
+
+	font-size: 0.9em;
+	color: rgb(var( --colourB));
+}
+

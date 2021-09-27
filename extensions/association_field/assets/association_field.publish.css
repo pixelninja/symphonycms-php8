@@ -1,0 +1,42 @@
+.field-association ul {
+	margin: 0;
+}
+
+.field-association div.multi::after {
+	content: '→ ' attr(data-count) ' ' attr(data-label-plural);
+	display: block;
+	margin-top: 0.8rem;
+	color: #b4b4b4;
+}
+
+.field-association div.multi[data-count='1']::after {
+	content: '→ ' attr(data-count) ' ' attr(data-label-singular);
+}
+
+tr.selected .field-association div.multi::after {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.field-association li {
+	display: inline;
+}
+
+.field-association li + li::before {
+	content: ', ';
+}
+
+.field-association li strong {
+	font-weight: normal;
+}
+
+.field-association li em {
+	font-style: normal;
+}
+
+.field-association li br {
+	display: none;
+}
+
+tr.selected .field-association a {
+	color: #fff;
+}

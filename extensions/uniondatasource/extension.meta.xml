@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="uniondatasource" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Union Datasource</name>
+	<description>The Union Datasource extension allows you to combine multiple Data Sources to output as a single Data Source for the primary purpose of a unified pagination.</description>
+	<repo type="github">https://github.com/symphonists/uniondatasource</repo>
+	<url type="discuss">http://getsymphony.com/discuss/thread/66151/</url>
+	<types>
+		<type>Other</type>
+	</types>
+	<authors>
+		<author>
+			<name github="brendo" symphony="brendo">Brendan Abbott</name>
+			<website>http://www.bloodbone.ws</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.2" date="2017-03-24" min="2.5">
+			* [#43](https://github.com/brendo/uniondatasource/issues/43) Fix formatted textarea being escaped (thanks @Aonrud)
+			* [#42](https://github.com/brendo/uniondatasource/issues/42) Prevent parameters from duplicating in the output (thanks @moretaste)
+		</release>
+		<release version="1.1" date="2014-12-22" min="2.5">
+			* Support for Symphony 2.5+
+			* [#35](https://github.com/brendo/uniondatasource/issues/35) Ensure values are actually added to the parameter pool
+			* Fix issues when using two datasources from the same section
+			* Support Forbidden/Required parameters
+		</release>
+		<release version="1.0.4" date="2013-09-05" min="2.3.3" max="2.3.6">
+			* [#30](https://github.com/brendo/uniondatasource/issues/30) Add support for modification date
+			* [#28](https://github.com/brendo/uniondatasource/issues/28) Handle when a datasource is renamed and causes the editor to freak out
+			* Fix a bunch of `E_NOTICE`'s and miscellaneous fixes
+			* Fix typo in SQL string (thanks @iwyg)
+		</release>
+		<release version="1.0.3" date="2012-12-09" min="2.3">
+			* [#26](https://github.com/brendo/uniondatasource/issues/26) Fix error where validation would overwrite all Union DS settings making it impossible to create a new Union Datasource. Fixes #26
+			* [#23](https://github.com/brendo/uniondatasource/issues/23) Pagination returns wrong number of entries if duplicates exist
+			* [#22](https://github.com/brendo/uniondatasource/issues/22) Sanitize Section names
+		</release>
+		<release version="1.0.2" date="2012-11-19" min="2.3">
+			* [#25](https://github.com/brendo/uniondatasource/issues/25) Fix Fatal error with Symphony 2.3.1
+		</release>
+		<release version="1.0.1" date="2012-06-07" min="2.3">
+			* [#19](https://github.com/brendo/uniondatasource/issues/19) Link colour when ordering Data Sources
+			* [#18](https://github.com/brendo/uniondatasource/issues/18) Wrong handles for Data Source links
+		</release>
+		<release version="1.0" date="2012-06-07" min="2.3">
+			* Updated to use Symphony 2.3 Providers
+			* Support redirecting to a 404 page when no results are found
+			* Support required parameters
+		</release>
+		<release version="0.6" date="2012-01-11" min="2.2" max='2.2.x'>
+			* Add support for dependencies. Datasources included in a Union Datasource will now resolve dependencies. Resave your existing Union Datasources to unlock this achievement. Fixes [#7](https://github.com/brendo/uniondatasource/issues/7)
+			* Fixed an issue where the sort order of Datasources would show incorrectly in the backend. Fixes [#5](https://github.com/brendo/uniondatasource/issues/5)
+		</release>
+		<release version="0.5.2" date="2011-12-05" min="2.2" max='2.2.x'>
+			* Add `extension.meta.xml` file
+			* Prevent some warnings from occurring
+		</release>
+		<release version="0.5.1" date="2011-06-18" min="2.2" max='2.2.x'>
+			* Preemptive support for Symphony 2.2.2's new ordering syntax
+			* Store Union Datasource alongside the version number
+		</release>
+		<release version="0.5" date="2011-06-15" min="2.2" max='2.2.x'>
+			* Support Required URL Parameter
+			* Support Redirect to 404 page when no results are found
+		</release>
+		<release version="0.4.2" date="2011-05-11" min="2.2" max='2.2.x'>
+			* Fix `RAND()` sorting bug
+			* Ensure only valid Datasources are includable
+		</release>
+		<release version="0.4.1" date="2011-05-10" min="2.2" max='2.2.x'>
+			* Don't `$process_param` in the backend context, fixes issue with required parameters
+			* Ensure SectionManager and FieldManager classes are included
+		</release>
+		<release version="0.4" date="2011-05-11" min="2.2" max='2.2.x'>
+			* Implemented an interface to build Union Datasources without having to hack modify any PHP
+			* Implement `DatasourceEntriesBuilt` delegate
+			* Support RAND() ordering
+			* Add support for Associated Entry Counts
+			* Display correct XML result when there are no entries found
+			* Sorting by `system:id` and `system:date` should work correctly
+		</release>
+		<release version="0.3" date="2011-04-12" min="2.2" max='2.2.x'>
+			* Fixed a critical bug that rendered the extension near useless. Thanks **@tonyarnold** for discovering and help debug.
+		</release>
+		<release version="0.2" date="2011-04-04" min="2.2" max='2.2.x'>
+			* Near complete rewrite to move all pagination and sorting into the SQL instead of using PHP.
+		</release>
+		<release version="0.1" date="2011-03-23" min="2.2" max='2.2.x'>
+			* Initial release
+		</release>
+	</releases>
+</extension>

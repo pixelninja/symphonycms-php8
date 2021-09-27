@@ -1,0 +1,20 @@
+#nav > ul > li.dontdrop a {
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    border: none;
+    transition: none;
+}
+
+#nav > ul > li.dontdrop.active a {
+	color: #fff;
+}
+
+#nav > ul > li.dontdrop.active a:hover,
+#nav > ul > li.dontdrop a:hover {
+    background: none;
+    border-color: transparent;
+    color: #555555;
+    text-shadow: none;
+}

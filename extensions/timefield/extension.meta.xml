@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="timefield" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Time Field</name>
+	<description>A field for hours, minutes, and seconds; filterable by value or range.</description>
+	<repo type="github">https://github.com/symphonists/timefield</repo>
+	<url type="discuss">https://www.getsymphony.com/discuss/thread/207/</url>
+	<types>
+		<type>Field</type>
+	</types>
+	<authors>
+		<author>
+			<name github="symphonycms" symphony="team">Symphony Team</name>
+			<website>https://www.getsymphony.com/</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="2.0.4" date="2017-08-10" min="2.6.0" max="2.x.x">
+			- Fix typo
+		</release>
+		<release version="2.0.3" date="2017-08-10" min="2.6.0" max="2.x.x">
+			- PHP7 compatibility
+		</release>
+		<release version="2.0.2" date="2017-08-07" min="2.6.0" max="2.x.x">
+			- Fix error with Symphony 2.7.0, which requires a commit method
+		</release>
+		<release version="2.0.1" date="2017-06-28" min="2.6.0" max="2.x.x">
+			- Fix meta fix errors
+			- Fix compatibility meta info
+		</release>
+		<release version="2.0.0" date="2017-06-05" min="2.6">
+			- Fix compatibility with latest Symphony version, use `Widget::Error`
+		</release>
+		<release version="1.6.1" date="2012-05-16" min="2.3" />
+		<release version="1.6.0" date="2012-03-19" min="2.3" />
+		<release version="1.5.0" date="2011-12-17" min="2.0.6" max="2.2.x" />
+		<release version="1.4.0" date="2008-04-15" min="2.0" max="2.0.5" />
+	</releases>
+</extension>

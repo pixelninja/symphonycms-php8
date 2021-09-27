@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="publish_blocks" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Publish Blocks</name>
+	<description>Add block groups to entry edit forms</description>
+	<repo type="github">https://github.com/pixelninja/publish_blocks</repo>
+	<url type="issues">https://github.com/pixelninja/publish_blocks/issues</url>
+	<types>
+		<type>Interface</type>
+	</types>
+	<authors>
+		<author>
+			<name github="pixelninja" symphony="touchstone">Phillip Gray</name>
+			<email>phill@thebold.nz</email>
+			<website>https://www.thebold.nz</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.0.0" date="2020-07-08" min="2.7.x" />
+	</releases>
+</extension>

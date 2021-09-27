@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="dashboard" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Dashboard</name>
+	<description>Provide a Dashboard summary screen with configurable panels</description>
+	<repo type="github">https://github.com/symphonists/dashboard</repo>
+	<url type="discuss">http://getsymphony.com/discuss/thread/48297/</url>
+	<types>
+		<type>Interface</type>
+	</types>
+	<authors>
+		<author>
+			<name github="symphonists" symphony="community">Symphony Community</name>
+		</author>
+		<author>
+			<name github="nickdunn" symphony="nickdunn">Nick Dunn</name>
+			<website>http://nick-dunn.co.uk</website>
+		</author>
+	</authors>
+	<media>
+		<item type="image" url="http://symphonyextensions.com/nickdunn/dashboard/media/dashboard.png">Example dashboard</item>
+	</media>
+	<releases>
+		<release version="2.0.1" date="2017-03-22" min="2.5.0" max="2.x.x">
+			* Supported on PHP 7
+			* Clean serialized value
+		</release>
+		<release version="2.0.0" date="2015-07-31" min="2.5.0" max="2.6.x">
+			* Symphony 2.6 compatibility
+			* Added 'label' and 'id' values in delegates
+		</release>
+		<release version="1.8.0" date="2015-01-16" min="2.3.x">
+			* Symphony 2.5 compatibility
+		</release>
+		<release version="1.7.0" date="2014-08-08" min="2.3.x">
+			* Updated to new Github API
+			* Add Russian Language
+			* Various fixes for the drawer and implementation
+		</release>
+		<release version="1.6.0" date="2012-03-09" min="2.3.x">
+			* Fully updated for Symphony 2.3, not compatible with Symphony 2.2
+		</release>
+		<release version="1.5.2" date="2011-11-01" min="2.2" max="2.2.5">
+			* Generic bug fixes
+		</release>
+		<release version="1.5.1" date="2011-06-01" min="2.2" max="2.2.5">
+			* Removed redundant styles and fixed various CSS bugs
+			* Removed deprecated JS &amp; CSS accessors
+		</release>
+		<release version="1.4" date="2011-05-15" min="2.1.x" />
+	</releases>
+</extension>

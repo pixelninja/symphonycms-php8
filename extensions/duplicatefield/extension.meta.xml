@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="duplicatefield" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Duplicate Field</name>
+	<description>Easily duplicate a field from within the Section Manager.</description>
+	<repo type="github">https://github.com/pixelninja/duplicatefield</repo>
+	<types>
+		<type>Workflow</type>
+	</types>
+	<authors>
+		<author>
+			<name github="pixelninja" symphony="touchstone">Phillip Gray</name>
+			<website>https://thebold.nz</website>
+            <email>phill@thebold.nz</email>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.1" date="2019-06-19" min="2.7">
+		  - Make sure selected `options` stay selected
+		  - Make new field names/handles unique
+			- Add german language
+		</release>
+		<release version="1.0" date="2017-11-01" min="2.7" />
+	</releases>
+</extension>

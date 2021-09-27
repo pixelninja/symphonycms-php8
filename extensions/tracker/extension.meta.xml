@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="tracker" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Tracker</name>
+	<description>Track user and system activity</description>
+	<repo type="github">https://github.com/symphonists/tracker</repo>
+	<url type="issues">https://github.com/symphonists/tracker/issues</url>
+	<types>
+		<type>Workflow</type>
+		<type>Audit</type>
+		<type>Log</type>
+	</types>
+	<authors>
+		<author>
+			<name github="cz" symphony="czheng">Craig Zheng</name>
+		</author>
+		<author>
+			<name github="symphonists">Symphony Community</name>
+		</author>
+	</authors>
+	<releases>
+		<release version="2.1.2" date="2018-07-24" min="2.6.0" max="2.x.x">
+			- Set Author Id to 0 if no author is set (#42)
+		</release>
+		<release version="2.1.1" date="2017-08-10" min="2.6.0" max="2.x.x">
+			- Symphony 2.7 compatibility
+		</release>
+		<release version="2.1.0" date="2017-06-12" min="2.6.0" max="2.6.x">
+			- Improved Member tracking
+		</release>
+		<release version="2.0.0" date="2017-06-05" min="2.6.0" max="2.6.x">
+			- Use renamed `prepareReadableValue` function instead of outdated `prepareTableValue`
+			- Fix value truncation
+		</release>
+		<release version="1.7.1" date="2017-03-31" min="2.5.x" max="2.x.x">
+			- Fix SQL error in update query
+		</release>
+		<release version="1.7.0" date="2017-03-31" min="2.5.x" max="2.x.x">
+			- Fix issue with MySQL 5.7: data too long error
+			- Added more PSR-2 formatting
+			- Fix improper use of late stating binding
+		</release>
+		<release version="1.6.0" date="2017-03-23" min="2.5.x" max="2.x.x">
+			- Fix for back-end users on Symphony 2.6+
+			- Managers can now see the tracker data, but not delete it
+		</release>
+		<release version="1.5.2" date="2017-03-22" min="2.5.x" max="2.x.x">
+			- Fix for front-end members not showing up when using email for authentication
+		</release>
+		<release version="1.5.1" date="2017-03-20" min="2.5.x" max="2.x.x">
+			- PHP7 fix
+		</release>
+		<release version="1.5.0" date="2016-03-10" min="2.5.x" max="2.x.x">
+			- Added support for notifying multiple URLs
+			- Log entry delete events
+			- Use `EntryPreDelete` instead of `EntryPostDelete`
+			- Minor bug fixes
+		</release>
+		<release version="1.4.0" date="2015-06-24" min="2.5" max="2.6.x">
+			- Fixed author deletion
+			- Added tracking of front-end members
+			- Updated interface to highlight create and delete actions
+		</release>
+		<release version="1.3.0" date="2015-06-08" min="2.4" max="2.6.x">
+			- Fixed compatibility with Symphony's XSRF
+			- Added Slovak translation
+		</release>
+		<release version="1.2.2" date="2015-06-04" min="2.4">
+			- Bug fix, add right data attributes to table
+		</release>
+		<release version="1.2.1" date="2014-06-17" min="2.4">
+			- Code style clean-up
+		</release>
+		<release version="1.2.0" date="2014-03-18" min="2.4">
+			- Symphony 2.4 compatibility
+		</release>
+		<release version="1.1.1" date="2012-06-20" min="2.3" />
+		<release version="1.1.0" date="2012-06-20" min="2.3">
+			- Fixed compatibility issues with Symphony 2.3
+			- Improved localisation capabilities
+			- Updated German translation
+			- Unfied code documentation
+		</release>
+		<release version="1.0.1" date="2012-05-16" min="2.3" />
+		<release version="1.0.0" date="2012-05-16" min="2.3" />
+		<release version="0.9.9" date="2011-05-11" min="2.1.0" />
+	</releases>
+</extension>

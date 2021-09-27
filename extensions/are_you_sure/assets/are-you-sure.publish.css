@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+/* Dirty Form Save-Button pulse */
+.dirty input[name="action[save]"] {
+animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {box-shadow: 0 0 0 4px rgba(80,120,180,0);}
+ 70% {box-shadow: 0 0 0 4px rgba(80,120,180,.4);}
+100% {box-shadow: 0 0 0 4px rgba(80,120,180,0);}
+}

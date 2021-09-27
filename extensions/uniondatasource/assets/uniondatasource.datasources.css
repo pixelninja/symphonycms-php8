@@ -1,0 +1,16 @@
+
+.union-datasources .frame-header {
+	border-bottom: 0;
+	box-shadow: none;
+}
+
+.union-datasources .frame-header h4 a {
+	font-weight: normal;
+	margin-top: 0;
+	color: #3F69A5;
+}
+
+.union-datasources .ordering .frame-header h4 a {
+	color: #fff;
+	border-color: rgba(255, 255, 255, 0.3);
+}

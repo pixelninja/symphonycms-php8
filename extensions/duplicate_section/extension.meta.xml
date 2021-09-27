@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="duplicate_section" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Duplicate Section</name>
+	<description>Easily duplicate/clone your section parameters and fields</description>
+	<repo type="github">https://github.com/Solutions-Nitriques/duplicate_section</repo>
+	<url type="discuss">https://www.getsymphony.com/discuss/thread/73413/</url>
+	<types>
+		<type>Workflow</type>
+		<type>Interface</type>
+		<type>Sections</type>
+	</types>
+	<authors>
+		<author>
+			<name github="Solutions-Nitriques" symphony="Nitriques">Solutions Nitriques</name>
+			<website>http://www.nitriques.com</website>
+		</author>
+		<author>
+			<name github="DeuxHuitHuit" symphony="">Deux Huit Huit</name>
+			<website>http://www.deuxhuithuit.com</website>
+		</author>
+		<author>
+			<name github="PascalPiche" symphony="">Pascal Piche</name>
+			<website>http://www.nitriques.com</website>
+		</author>
+	</authors>
+	<dependencies>
+		<!-- None -->
+	</dependencies>
+	<releases>
+		<release version="1.3.0" date="2019-04-12" min="2.3" max="2.7.x">
+			- Remove section dates
+		</release>
+		<release version="1.2" date="2012-06-12" min="2.3">
+			- Update for compatibility with symphony 2.3
+		</release>
+		<release version="1.1" date="2012-04-16" min="2.2" max="2.2">
+			- Update for symphony exntension site (created the extension.meta.xml file)
+		</release>
+		<release version="1.0" date="2011-07-11" min="2.2" />
+	</releases>
+</extension>

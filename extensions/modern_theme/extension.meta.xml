@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="modern_theme" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Theme: Modern</name>
+	<description>A more modern theme for Symphony CMS.</description>
+	<repo type="bitbucket">https://bitbucket.org/thebold/symphonycms-modern-theme</repo>
+	<types>
+		<type>Interface</type>
+	</types>
+	<authors>
+		<author>
+			<name>Phillip Gray</name>
+			<website>https://www.thebold.nz</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.0" date="2020-07-30" min="2.7.z">
+			- Initial release
+		</release>
+	</releases>
+</extension>

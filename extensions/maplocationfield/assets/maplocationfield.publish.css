@@ -1,0 +1,42 @@
+div.field-maplocation {
+	margin-bottom: 1.75em;
+}
+
+div.field-maplocation div.tab-panel {
+	overflow: auto;
+	clear: both;
+}
+
+
+div.field-maplocation div.gmap {
+	width: 100%;
+	height: 420px;
+}
+
+div.field-maplocation div.tab-edit fieldset {
+  box-sizing: border-box;
+	padding: 8px;
+	float: left;
+	width: 50%;
+}
+
+div.field-maplocation div.tab-edit label {
+	margin: 0;
+}
+
+div.field-maplocation fieldset input {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+div.field-maplocation fieldset input.button {
+  margin: 8px 0 0 0;
+}
+
+div.field-maplocation fieldset.coordinates input.text {
+  width: 50%;
+}
+
+div.field-maplocation fieldset.geocode input.text {
+  width: 100%;
+}

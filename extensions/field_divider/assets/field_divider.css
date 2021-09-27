@@ -1,0 +1,36 @@
+.field-field_divider {
+    position: relative;
+    min-height: 1px;
+    margin: 25px 0;
+}
+
+.field-field_divider:first-child {
+    margin-top: 0;
+}
+
+.field-field_divider p {
+    display: inline-block;
+    margin: 0;
+    padding: 0.5rem 1rem 0.5rem 0;
+    background: #fff;
+
+    font-weight: bold;
+    color: #282828;
+
+    position: relative;
+    z-index: 2;
+}
+
+.field-field_divider:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+    background: #282828;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+}

@@ -1,0 +1,130 @@
+.field-medialibraryfield {
+	position: relative;
+}
+
+.field-medialibraryfield:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.field-medialibraryfield label {
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+.field-medialibraryfield.required label:after {
+	right: 0;
+}
+
+.field-medialibraryfield input {
+	display: none;
+	width: 55px;
+}
+
+.field-medialibraryfield .caption {
+	display: block;
+	color: #222;
+	margin: 5px 0;
+	padding: 3px 0;
+}
+
+.field-medialibraryfield .invalid .caption {
+	opacity: 1;
+	color: rgba(255,255,255,.7);
+}
+
+.field-medialibraryfield .invalid > p {
+	margin-top: 1em;
+}
+
+.field-medialibraryfield .preview {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	background: #f4f4f4;
+	border-radius: 0 0 3px 3px;
+	overflow: hidden;
+}
+
+.field-medialibraryfield .item {
+	position: relative;
+	height: 50px;
+}
+
+.field-medialibraryfield .item:not(:last-child) {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0, .25);
+}
+
+.field-medialibraryfield .item img,
+.field-medialibraryfield .item audio,
+.field-medialibraryfield .item video {
+	float: left;
+	display: block;
+	width: auto;
+	max-width: 75px;
+	height: inherit;
+	margin-right: 10px;
+}
+
+.field-medialibraryfield .item audio {
+	width: 50%;
+	max-width: 100%;
+	outline: none;
+}
+
+.field-medialibraryfield[data-allow-multiple] .item img,
+.field-medialibraryfield[data-allow-multiple] .item video {
+	width: 100px;
+	object-fit: contain;
+	object-position: right;
+}
+
+.field-medialibraryfield .item p {
+	margin: 0;
+	padding: 5px 60px 0 5px;
+}
+
+.field-medialibraryfield .item strong {
+	display: block;
+}
+
+.field-medialibraryfield .item .view {
+	position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.field-medialibraryfield .item .remove {
+	position: absolute;
+    bottom: 15px;
+    right: 0;
+}
+
+.field-medialibraryfield .item:last-child .remove {
+	bottom: 0;
+}
+
+.field-medialibraryfield .clear {
+	display: none;
+	margin: 5px 0 1.5em;
+}
+
+.field-medialibraryfield .preview + .clear {
+	display: inline-block;
+}
+
+.field-medialibraryfield[data-allow-multiple] .item {
+	cursor: grab;
+}
+
+.field-medialibraryfield[data-allow-multiple] .item.sortable-chosen {
+	background-color: #f4f4f4;
+	cursor: grabbing;
+}
+
+.field-medialibraryfield[data-allow-multiple] .item.sortable-ghost {
+	opacity: 0.5;
+}

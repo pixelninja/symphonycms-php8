@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="reflectionfield" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Reflection Field</name>
+	<description>This field generates values based on other fields from the same entry. Uses XPath and optionally XSLT.</description>
+	<repo type="github">https://github.com/symphonists/reflectionfield</repo>
+	<repo type="issues">https://github.com/symphonists/reflectionfield/issues/</repo>
+	<url type="discuss">http://www.getsymphony.com/discuss/thread/809/</url>
+	<types>
+		<type>Field Types</type>
+	</types>
+	<authors>
+		<author>
+			<name github="symphonists" symphony="community">Symphony Community</name>
+		</author>
+		<author>
+			<name github="rowan-lewis" symphony="buzzomatic">Rowan Lewis</name>
+			<website>http://nbsp.io/</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="2.0.4" date="2018-06-02" min="2.3" max="2.x.x">
+			- Fix XPath-expressions [#35](https://github.com/symphonists/reflectionfield/issues/35)
+		</release>
+		<release version="2.0.3" date="2017-09-10" min="2.3" max="2.x.x">
+			- Fix field caption and thus `1.D` in [#35](https://github.com/symphonists/reflectionfield/issues/35)
+		</release>
+		<release version="2.0.2" date="2017-04-19" min="2.3" max="2.x.x">
+			- Fix issues with xslt functions
+		</release>
+		<release version="2.0.1" date="2017-01-27" min="2.3" max="2.x.x">
+			- PHP 7 compatibility
+		</release>
+		<release version="2.0.0" date="2017-01-06" min="2.3" max="2.x.x">
+			- Added reflection field handle to `param` node
+			- Moved `root` and `workspace` nodes to `param` node to conform with the front-end XML structure
+			- Added XSLT utility instructions
+		</release>
+		<release version="1.4.2" date="2016-01-29" min="2.3" max="2.6.x">
+			- Prevent the same field from being registered multiple times
+			- Added XML Importer instructions
+		</release>
+		<release version="1.4.1" date="2015-01-12" min="2.3">
+			- Added XML Importer support
+			- Added system date to generated entry XML
+		</release>
+		<release version="1.4.0" date="2013-06-22" min="2.3">
+			- Added export modes
+		</release>
+		<release version="1.3.1" date="2013-02-16" min="2.3">
+			- Allow reflection field to recalculate data when field is toggled from publish indexes
+			- Fix issue when an installation has no Utilities
+		</release>
+		<release version="1.3.0" date="2012-08-08" min="2.3">
+			- Made compatible with Symphony 2.3
+		</release>
+		<release version="1.2.0" date="2011-07-26" min="2.2" max="2.3" />
+		<release version="1.0.11" date="2011-04-11" min="2.2">
+			- Force tables to be created with the MyISAM table engine.
+		</release>
+		<release version="1.0.10" date="2011-03-04" min="2.2">
+			- Fixed a sanitisation issue on publish pages.
+			- Made compatible with Symphony 2.2.
+		</release>
+		<release version="1.0.9" date="2010-11-01" min="2.1.x">
+			- Bug with usage of appendFormattedElement fixed by michael-e.
+		</release>
+		<release version="1.0.8" date="2009-12-09" min="2.1.x">
+			- Some bug fixes and code cleanup.
+		</release>
+		<release version="1.0.7" date="2009-08-21" min="2.1.x">
+			- Fixed column sorting issues.
+			- Added more filter modes.
+		</release>
+		<release version="1.0.6" date="2009-04-23" min="2.1.x">
+			- Added a search: filter method to allow you to use boolean type searching.
+		</release>
+		<release version="1.0.6" date="2009-03-30" min="2.1.x">
+			- Fixed a number of possible encoding issues.
+		</release>
+	</releases>
+</extension>

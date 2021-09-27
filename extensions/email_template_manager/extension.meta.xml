@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="email_template_manager" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Email Template Manager</name>
+	<description>Emails need pages no more</description>
+	<repo type="github">https://github.com/creativedutchmen/email_template_manager</repo>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/64323/</url>
+	<types>
+		<type>Email</type>
+	</types>
+	<authors>
+		<author>
+			<name github="creativedutchmen" symphony="creativedutchmen">Huib Keemink</name>
+			<website>http://www.creativedutchmen.com</website>
+		</author>
+	</authors>
+	<media>
+		<item type="image" url="http://symphonyextensions.com/creativedutchmen/email_template_manager/media/email_template_manager.jpg">Email Template Manager: Emails need pages no more</item>
+	</media>
+	<releases>
+		<release version="8.0.1" date="2019-02-27" min="2.7.0" max="2.7.x">
+			<![CDATA[
+- [#98](https://github.com/michael-e/email_template_manager/issues/98): Superfluous "missing recipient" messages in log file
+			]]>
+		</release>
+		<release version="8.0.0" date="2018-08-09" min="2.7.0" max="2.7.x">
+			<![CDATA[
+- Add note on compatibility to the README
+- [#96](https://github.com/michael-e/email_template_manager/issues/96): Always interpret commas as attachment separators
+- Implement "from" logic (fake "From" header field)
+- Improve structure and formatting of README
+			]]>
+		</release>
+		<release version="7.6.2" date="2018-07-30" min="2.7.0" max="2.7.x">
+			<![CDATA[
+- Prevent undefined index
+			]]>
+		</release>
+		<release version="7.6.1" date="2018-06-28" min="2.7.0" max="2.7.x">
+			<![CDATA[
+- PHP 7.2 compatibility
+			]]>
+		</release>
+		<release version="7.6.0" date="2018-06-26" min="2.7.0" max="2.7.x">
+			<![CDATA[
+- Add delegates before and after output generation
+- Remove php-min and php-max attributes
+			]]>
+		</release>
+		<release version="7.5.1" date="2018-05-02" min="2.7.0" max="2.7.x">
+			<![CDATA[
+- Do not return false when parsing properties (#94)
+			]]>
+		</release>
+		<release version="7.5.0" date="2017-11-19" min="2.7.0" max="2.7.x">
+			<![CDATA[
+- Allow HTTP(S) URLs for attachments
+			]]>
+		</release>
+		<release version="7.4.0" date="2017-07-31" min="2.7.0" max="2.7.x">
+			<![CDATA[
+- Allow attachments to be optional (requires Symphony 2.7)
+			]]>
+		</release>
+		<release version="7.3.3" date="2017-07-31" min="2.4.0" max="2.6.x">
+			<![CDATA[
+- Several fixes and improvements
+			]]>
+		</release>
+		<release version="7.3.2" date="2017-04-29" min="2.4.x" max="2.6.x">
+			<![CDATA[
+- Minor fixes, cleanup
+			]]>
+		</release>
+		<release version="7.3.1" date="2016-08-10" min="2.4.x" max="2.6.x">
+			<![CDATA[
+- Supported on PHP 7
+- Fix compilation error with preview for Windows and Unix (see #2375)
+- Fix params when override parent
+			]]>
+		</release>
+		<release version="7.3.0" date="2016-04-20" min="2.4.x" max="2.6.x">
+			<![CDATA[
+- Implement attachments logic
+			]]>
+		</release>
+		<release version="7.2.1" date="2016-04-20" min="2.4.x" max="2.6.x">
+			<![CDATA[
+- Fix for adding POST parameters when field has an array/complicated structure (thanks @jonmifsud)
+- Fix recipients parsing; split string after (not before) XPath parsing (thanks @jonmifsud)
+			]]>
+		</release>
+		<release version="7.2.0" date="2016-03-06" min="2.4.x" max="2.6.x">
+			<![CDATA[
+- Code formatting and minor fixes
+- Added support for different admin URL
+- Marked as compatible with Symphony 2.x.x
+			]]>
+		</release>
+		<release version="7.1.1" date="2014-10-11" min="2.4">
+			<![CDATA[
+- Be more careful with variable type.
+			]]>
+		</release>
+		<release version="7.1" date="2014-10-11" min="2.4">
+			<![CDATA[
+- Modernized code formatting.
+- Fixed issue with duplicate emails (#80).
+			]]>
+		</release>
+		<release version="7.0" date="2014-09-29" min="2.4">
+			<![CDATA[
+- Removed XSLT editors.
+			]]>
+		</release>
+		<release version="6.0.2" date="2014-08-25" min="2.4">
+			<![CDATA[
+- Fix for #72: Use method detection for retrieving the author object.
+			]]>
+		</release>
+		<release version="6.0.1" date="2014-08-20" min="2.4">
+			<![CDATA[
+- Bugfix: Fatal error when saving templates
+			]]>
+		</release>
+		<release version="6.0" date="2014-06-13" min="2.4">
+			<![CDATA[
+- Bugfixes
+- Symphony 2.4 compatibility
+			]]>
+		</release>
+		<release version="5.1" date="2014-03-21" min="2.3">
+			<![CDATA[
+- Include Post Data as Params (thanks @korelogic)
+			]]>
+		</release>
+		<release version="5.0" date="2013-10-04" min="2.3">
+			<![CDATA[
+- 2.3 compatibility, finally.
+			]]>
+		</release>
+		<release version="4.1" date="2012-08-11" min="2.2.3">
+			<![CDATA[
+- Added 2.3 compatibility
+			]]>
+		</release>
+		<release version="4.0.1" date="2012-06-06" min="2.2.1" max="2.2.x"/>
+		<release version="4.0" date="2012-05-23" min="2.2.1" max="2.2.x">
+			<![CDATA[
+- Made template inlcude paths work as expected. Requires updating include paths!
+			]]>
+		</release>
+		<release version="3.0" date="2011-05-03" min="2.2.1" max="2.2.x">
+			<![CDATA[
+ - Added looping over recipients, so multiple customised emails are possible
+ - Moved filter preferences from POST values to configuration menu
+ - Added recipients and reply-to values to generate() function
+ - Added compatibility with the Members extension
+			]]>
+		</release>
+		<release version="2.2" date="2011-04-15" min="2.2.1" max="2.2.x">
+			<![CDATA[
+ - Fixed sorting order of event filters
+ - Fixed bug with field[] syntax in frontend
+ - Fixed bug with demo code with more than one template installed
+			]]>
+		</release>
+		<release version="2.1" date="2011-04-06" min="2.2.1" max="2.2.x">
+			<![CDATA[
+ - SQL Injection flaw fixed
+			]]>
+		</release>
+		<release version="2.0" date="2011-04-02" min="2.2.1" max="2.2.x">
+			<![CDATA[
+ - Event filters are supported, so custom events are no longer needed to send emails.
+ - It is possible to select which layouts to use (Html, Plain or both).
+			]]>
+		</release>
+		<release version="1.0" date="2011-03-15" min="2.2.1" max="2.2.x">
+			<![CDATA[
+- Initial release.
+			]]>
+		</release>
+	</releases>
+</extension>

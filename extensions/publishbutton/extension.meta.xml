@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="publishbutton" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Publish Button</name>
+	<description>A button that toggles an entry's published-state and allows authors to preview unpublished entries on the live site.</description>
+	<repo type="github">https://github.com/pixelninja/publishbutton</repo>
+	<url type="issues">https://github.com/pixelninja/publishbutton/issues/</url>
+	<types>
+		<type>Workflow</type>
+	</types>
+	<authors>
+		<author>
+			<name github="pixelninja">Phill Gray</name>
+			<website>https://thebold.nz</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.2.2" date="2019-08-12" min="2.7.x">
+			- Bug fix where the checked state was being set on load and not being updated on click, resulting in the same state being sent via AJAX regardless of checked state.
+		</release>
+		<release version="1.2.1" date="2018-06-14" min="2.7.x">
+			- Added Links to the meta.xml
+			- Unified version numbers in meta.xml
+			- Extended readme
+		</release>
+		<release version="1.2.0" date="2018-06-14" min="2.7.x">
+			- Fix bug where authors and managers wouldn't see the button
+		</release>
+		<release version="1.1.0" date="2017-12-07" min="2.7.x">
+			- Make sure JS is executed after window load
+		</release>
+		<release version="1.0.0" date="2017-11-02" min="2.7.x" />
+	</releases>
+</extension>

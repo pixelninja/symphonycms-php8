@@ -1,0 +1,34 @@
+@font-face {
+	src: url('fonts/icons.eot?45544828');
+	src: url('fonts/icons.eot?45544828#iefix') format('embedded-opentype'),
+	     url('fonts/icons.woff?45544828') format('woff'),
+	     url('fonts/icons.ttf?45544828') format('truetype'),
+	     url('fonts/icons.svg?45544828#icons') format('svg');
+	font-family: 'icons';
+	font-weight: normal;
+	font-style: normal;
+}
+
+.unpublishedfilter-draft,
+.unpublishedfilter-draft a,
+.unpublishedfilter-future,
+.unpublishedfilter-future a {
+	color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.unpublishedfilter-future td:first-child a::before {
+	content: '\e80b';
+	padding-right: 0.5em;
+	color: #3f69a5;
+	font-family: icons;
+	font-size: 12px;
+	border-bottom: 1px solid #fff;
+}
+
+.unpublishedfilter-future:nth-child(odd) a::before {
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.unpublishedfilter-published {
+	color: #000;
+}

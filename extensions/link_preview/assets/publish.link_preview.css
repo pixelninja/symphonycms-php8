@@ -1,0 +1,25 @@
+/*
+	Copyight: Deux Huit Huit 2013
+	License: MIT, http://deuxhuithuit.mit-license.org
+*/
+
+/**
+ * CSS for link_preview
+ *
+ * @author deuxhuithuit
+ */
+
+.field-link_preview {
+	display: none;
+}
+
+.actions .link-preview {
+	background-color: #4d78b4;
+	background-image: linear-gradient(to bottom, #6f92c2 0%, #6f92c2 35%, #4d78b4 65%, #4d78b4 100%);
+
+	color: #fff;
+}
+
+.actions .link-preview:hover {
+	background-image: linear-gradient(to bottom, #6f92c2 0%, #6f92c2 15%, #4d78b4 65%, #4d78b4 100%);
+}

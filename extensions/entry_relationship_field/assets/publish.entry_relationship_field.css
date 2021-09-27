@@ -1,0 +1,191 @@
+/*
+	Copyright: Deux Huit Huit 2014
+	License: MIT, see the LICENCE file
+*/
+
+/**
+ * CSS for entry/reverse relationship field
+ */
+.field.field-entry_relationship {
+	
+}
+
+.field.field-entry_relationship > .frame,
+.field.field-reverse_relationship > .frame {
+	margin: 0;
+}
+.field.field-entry_relationship > .frame:not(.no-header):not(.empty); {
+	border-top: 0;
+}
+
+.field.field-entry_relationship > .frame .frame-header.no-content {
+	border-bottom: none;
+}
+
+.field.field-reverse_relationship > .frame .frame-header.no-content {
+	cursor: auto;
+}
+
+.field.field-entry_relationship fieldset.single,
+.field.field-reverse_relationship fieldset.single {
+	text-align: right;
+}
+
+.field.field-entry_relationship fieldset.single > button,
+.field.field-reverse_relationship fieldset.single > button {
+	margin-right: 0px;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+}
+
+.field.field-entry_relationship fieldset.single > div {
+	min-width: 150px;
+	display: inline-block;
+}
+
+.field.field-entry_relationship .destructor a,
+.field.field-reverse_relationship .destructor a {
+	color: #aeaeae;
+	display: inline-block;
+	padding: 0 5px;
+	border-bottom: none;
+}
+
+.field.field-entry_relationship .destructor a.edit:hover {
+	color: #282828;
+}
+
+.field.field-entry_relationship .destructor a.unlink:hover,
+.field.field-entry_relationship .destructor a.delete:hover,
+.field.field-reverse_relationship .destructor a.unlink:hover {
+	color: #e90a20;
+}
+
+.field.field-entry_relationship .content pre {
+	max-height: 300px;
+	overflow:auto;
+}
+.field.field-entry_relationship .content pre code {
+	white-space: pre-wrap;
+}
+
+.field.field-entry_relationship .sections,
+.field.field-reverse_relationship .reverse-selection {
+	display: inline-block;
+	width: auto;
+	margin: 0;
+}
+
+.field.field-entry_relationship select.sections {
+	min-width: 100px;
+	margin-left: 1rem;
+}
+
+.field.field-entry_relationship span.sections-selection {
+	margin-left: 1rem;
+}
+
+.field.field-entry_relationship input.search {
+	width: calc(100% - 1rem);
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+}
+
+.field.field-entry_relationship fieldset.single > div.search {
+	position: relative;
+	max-width: 250px;
+	min-width: 200px;
+}
+
+.field.field-entry_relationship .suggestions {
+	width: auto;
+	text-align: left;
+	left: 1rem;
+	right: 0;
+	top: 2.5rem;
+}
+
+
+/**
+ * CSS for entry relationship field iframe
+ */
+#entry-relationship-ctn {
+	background-color: #282828;
+	background-color: rgba(40, 40, 40, 0);
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	
+	visibility: collapse;
+	opacity: 1;
+	pointer-events: none;
+	-webkit-transition: background-color 200ms ease-out, visibility 0ms linear 200ms;
+	-moz-transition: background-color 200ms ease-out, visibility 0ms linear 200ms;
+	-ms-transition: background-color 200ms ease-out, visibility 0ms linear 200ms;
+	transition: background-color 200ms ease-out, visibility 0ms linear 200ms;
+}
+
+#entry-relationship-ctn.show {
+	background-color: rgba(40, 40, 40, 0.7);
+	visibility: visible;
+	opacity: 1;
+	pointer-events: all;
+	-webkit-transition: background-color 200ms linear 0ms, visibility 0ms linear 0ms;
+	-moz-transition: background-color 200ms linear 0ms, visibility 0ms linear 0ms;
+	-ms-transition: background-color 200ms linear 0ms, visibility 0ms linear 0ms;
+	transition: background-color 200ms linear 0ms, visibility 0ms linear 0ms;
+}
+
+#entry-relationship-ctn > .iframe {
+	opacity: 0.3;
+	position: absolute;
+	-webkit-box-shadow: 0 .4rem .5rem rgba(0, 0, 0, 0.03),0 7px 15px -5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 .4rem .5rem rgba(0, 0, 0, 0.03),0 7px 15px -5px rgba(0, 0, 0, 0.15);
+	box-sizing: border-box;
+	background-color: #fff;
+	-webkit-transition: -webkit-transform 100ms ease-in, opacity 200ms ease-in;
+	-moz-transition: -moz-transform 100ms ease-in, opacity 200ms ease-in;
+	-ms-transition: -ms-transform 100ms ease-in, opacity 200ms ease-in;
+	transition: transform 100ms ease-in, opacity 200ms ease-in;
+	-webkit-transform: translate(15%, 0%);
+	transform: translate(15%, 0%);
+	top: 0;
+	left: 50%;
+}
+
+#entry-relationship-ctn.show > .iframe {
+	opacity: 1;
+	-webkit-transform: translate(0%, 0%);
+	transform: translate(0%, 0%);
+}
+
+#entry-relationship-ctn.show > .iframe > iframe {
+	opacity: 1;
+	display: none;
+}
+
+#entry-relationship-ctn > button {
+	
+}
+
+
+/**
+ * CSS for entry relationship field page customization
+ */
+html.no-scroll {
+	overflow: hidden;
+}
+body.entry_relationship {
+	
+}
+
+body.entry_relationship #save-and-new, 
+body.entry_relationship #save-and-return,
+body.entry_relationship button.delete {
+	display: none;
+}
+

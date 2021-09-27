@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="entry_relationship_field" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Field: Entry Relationship</name>
+	<description>
+		A new way to create master-details (parent -&gt; children) relationships with Symphony's sections.
+	</description>
+	<repo type="github">https://github.com/DeuxHuitHuit/entry_relationship_field</repo>
+	<url type="discuss">https://www.getsymphony.com/discuss/thread/108680/</url>
+	<url type="issues">https://github.com/DeuxHuitHuit/entry_relationship_field/issues</url>
+	<media>
+		<item type="image" url="https://az21792.vo.msecnd.net/images/76afc01e-df84-4324-b9aa-12421850e35d_thumb.jpg">
+			Screen shot
+		</item>
+	</media>
+	<types>
+		<type>Relationship</type>
+		<type>Field</type>
+		<type>Master</type>
+		<type>Detail</type>
+		<type>Workflow</type>
+		<type>Association</type>
+	</types>
+	<authors>
+		<author>
+			<name github="DeuxHuitHuit" symphony="nitriques" twitter="DeuxHuitHuit">Deux Huit Huit</name>
+			<website>https://deuxhuithuit.com/</website>
+		</author>
+	</authors>
+	<dependencies>
+		<!-- None -->
+	</dependencies>
+	<releases>
+		<release version="2.3.1" date="2019-05-01" min="2.7.3" max="2.x.x">
+			- Fix ajax save when no entries linked (#82)
+		</release>
+		<release version="2.3.0" date="2019-05-01" min="2.7.3" max="2.x.x">
+			- Fix for field name selection that was not properly working
+			- Add support for selecting system dates (creation/modification)
+		</release>
+		<release version="2.2.5" date="2019-04-08" min="2.7.3" max="2.x.x">
+			- Fix missing $
+			- Fix broken field section in Datasources
+		</release>
+		<release version="2.2.4" date="2018-09-12" min="2.7.3" max="2.x.x">
+			- Add support for drawers (except filtering)
+		</release>
+		<release version="2.2.3" date="2018-08-31" min="2.7.3" max="2.x.x">
+			- Fix a bug when upgrading from &lt; 2.0.0
+		</release>
+		<release version="2.2.2" date="2018-07-19" min="2.7.3" max="2.x.x">
+			- Fix a problem with the absence of unload events when removing the iframe
+		</release>
+		<release version="2.2.1" date="2018-05-09" min="2.7.3" max="2.x.x">
+			- Fix initial value for reverse relationship
+			- Fix problem with association counts and getting the timestamp
+		</release>
+		<release version="2.2.0" date="2018-04-23" min="2.7.3" max="2.x.x">
+			- Add French language file
+		</release>
+		<release version="2.1.2" date="2018-03-08" min="2.7.3" max="2.x.x">
+			- Prevent error when saving a field that links to an invalid section
+		</release>
+		<release version="2.1.1" date="2018-02-28" min="2.7.3" max="2.x.x">
+			- Fix broken install SQL (#75)
+		</release>
+		<release version="2.1.0" date="2018-02-21" min="2.7.3" max="2.x.x">
+			- Fix a problem with the replace function (#74)
+			- Add XSLT output for reverse relationship
+			- Add sort to reverse relationship
+		</release>
+		<release version="2.0.2" date="2018-01-31" min="2.7.0" max="2.x.x">
+			- Make fetchIncludableElements() return ['*'] (#72)
+			- Prevent infinite loop in circular schemas
+			- Compare rather than set so we can view the raw XML view (#73)
+		</release>
+		<release version="2.0.1" date="2017-12-11" min="2.7.0" max="2.x.x">
+			- Replace fadeIn by fadeTo to avoid sizing problems
+		</release>
+		<release version="2.0.0" date="2017-12-08" min="2.7.0" max="2.x.x">
+			- Fix issue with subfield selection (#70)
+		</release>
+		<release version="2.0.0.beta11" date="2017-12-06" min="2.7.0" max="2.x.x">
+			- Remove debug attribute from production xml
+		</release>
+		<release version="2.0.0.beta10" date="2017-10-17" min="2.7.0" max="2.x.x">
+			- Added deepness check in SectionsInfos fetch
+		</release>
+		<release version="2.0.0.beta9" date="2017-08-30" min="2.7.0" max="2.x.x">
+			- Added support for publish filtering and DS filtering by value (#48)
+			- Added support for basic search (#47)
+			- Added support for parent associations
+			- Added the Reverse Relationship Field (#43)
+			- Better UI for the selection of included elements (#57)
+			- Fixed frontend event form markup (#54)
+			- Allow collapsing of entries content (#16)
+			- Fixed some bugs regarding data-source output (#55) which may impact the compatibility with previous xstl templates
+			- Fixed some minor UI quirks
+			- Added the ability to create XSL templates for the publish table view (#45)
+			- Added the ability to create XSL templates for the header in the publish view (#29)
+			- Always show the unlink button when the entry is not found (#51)
+			- Added the ability to hide the header in entries templates (#58)
+			- Added the ability to create XSL templates for the publish action bar (#59)
+			- Supported on PHP 7 (#65)
+		</release>
+		<release version="1.0.3" date="2015-08-12" min="2.5.0" max="2.6.x">
+			- Added a un-link button.
+			- Entries can now be deleted straight from the field UI.
+			- Fixed some other minor bugs
+			- Add a ESC key shortcut to close the popup (#17)
+			- Show the minimum and the maximum of entries allowed (#18)
+			- Added a data-attribute based API for the backend (#30)
+			- Section choice is now saved in local storage
+		</release>
+		<release version="1.0.2" date="2015-06-03" min="2.5.0" max="2.6.x">
+			- Changed the column type for entries to TEXT to allow more entries to be linked
+			- Fixed a ton of bugs (#44, #42, #40, #38, #34, #33, #31, #26, #25, #24, #23, #22, #21, #20, #19, #11, #5, #4, #2)
+			- Most of the data-* api is done (See #30)
+			- Added options to hide link, new and edit buttons
+			- Better error management for the ajax save
+			- Added basic filtering (only works with entry id)
+		</release>
+		<release version="1.0.1" date="2014-11-05" min="2.5.0" max="2.5.x">
+			- Fix a bug that was preventing the render. Fixes #14
+			- Outputs all modes (formatted/unformatted). Fixes #7
+			- Only save via ajax if value changed. Fixes #6
+			- Do not output * in includable elements. Fixes #9
+			- Display real count of linked elements. Fixes #13
+			- Added section name in the DS xml. Fixes #12
+			- Turn off filtering. Re: #11
+			- Re-render after save or create. Re: #1
+			- Save the field value when it changes. Fixes #1
+			- Always show linking section. Fixes #3
+			- Added some xml params into backend templates. Fixes #8
+			- Added runtime params. Fixes #8
+			- Better debug visual
+		</release>
+		<release version="1.0.0" date="2014-10-27" min="2.5.0" max="2.5.x">
+			- First release
+		</release>
+	</releases>
+</extension>
