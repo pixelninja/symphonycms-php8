@@ -76,3 +76,14 @@ Commit all changes and push to the new branch.
 `git commit -am "update Symphony and extensions to PHP8.0 compatibility"`
 
 `git push origin php8`
+
+
+#### Pushing to production
+
+**For sites that needed to be upgraded to 2.7.10 first**
+
+On your php 8.0 server, switch to the php8 branch and pull all changes in. The `install` script will need to be run again as database changes are made. In my updates, this was fairly simple. I could then log in and remove the installer, and update extensions again.
+
+**For sites that were already at 2.7.10**
+
+You can remove the installer, and when you push to the server simply install/update extensions again. Or if replace the database is an option then do that. Whatever works for your flow.
