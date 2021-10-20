@@ -145,9 +145,8 @@ Class SearchIndex {
 		require_once(TOOLKIT . '/class.xsltprocess.php');
 		
 		$xml = simplexml_load_string($entry_xml->generate());
-		
+
 		foreach($xml->xpath("//entry") as $entry_xml) {
-			
 			$entry_id = (int)$entry_xml->attributes()->id;
 			
 			// delete existing index for this entry
@@ -169,7 +168,7 @@ Class SearchIndex {
 	* @param int $section
 	* @param string $data
 	*/
-	public function saveEntryIndex($entry_id, $section_id, $data) {
+	public static function saveEntryIndex($entry_id, $section_id, $data) {
 		// stores the full entry text
 		Symphony::Database()->insert(
 			array(

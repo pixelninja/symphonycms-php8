@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="google_recaptcha" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Google reCaptcha</name>
+	<description>Insert and process reCaptcha field for form submission</description>
+	<repo type="github">https://github.com/SagaraZD/google_recaptcha</repo>
+	<types>
+		<type>Third Party Integration</type>
+		<type>Captcha</type>
+		<type>reCaptcha</type>
+	</types>
+	<authors>
+		<author>
+			<name github="sagarazd" symphony="community">Sagara Dayananda</name>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.1.0" date="2017-09-28" min="2.6.x" max="2.x.x">
+			- Add validateChallenge() public method
+		</release>
+		<release version="1.0.1" date="2017-09-26" min="2.6.x" max="2.x.x">
+			- Refactor the http request to use the Gateway class
+		</release>
+		<release version="1.0" date="2017-08-24"  min="2.6.x" max="2.6.x" />
+	</releases>
+</extension>

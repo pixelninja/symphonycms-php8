@@ -166,6 +166,7 @@ class SectionDatasource extends Datasource
                     $mode = $split[1] ?? null;
 
                     if (self::$_fieldPool[$field_id]->get('element_name') == $handle) {
+                        $this->dsParamHTMLENCODE = $this->dsParamHTMLENCODE ?? null;
                         self::$_fieldPool[$field_id]->appendFormattedElement($xEntry, $values, ($this->dsParamHTMLENCODE === 'yes' ? true : false), $mode, $entry->get('id'));
                     }
                 }
